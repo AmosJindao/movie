@@ -1,4 +1,4 @@
-package jindao.movie.master;
+package org.movie.commons;
 
 /**
  * Hello world!
