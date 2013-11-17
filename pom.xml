@@ -13,7 +13,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
+<dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -22,4 +23,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  </dependencyManagement>
 </project>
