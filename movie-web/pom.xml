@@ -1,27 +1,47 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <parent>
-    <groupId>jindao.movie</groupId>
-    <artifactId>movie-master</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
 
-  <artifactId>movie-web</artifactId>
+	<parent>
+		<groupId>jindao.movie</groupId>
+		<artifactId>movie-master</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 
-  <packaging>war</packaging>
-  <name>movie-web Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-    </dependency>
-  </dependencies>
-  
-  <build>
-    <finalName>movie-web</finalName>
-  </build>
+	<artifactId>movie-web</artifactId>
+
+	<packaging>war</packaging>
+	<name>movie-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.0.7.v20131107</version>
+				<configuration>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webApp>
+						<contextPath>/</contextPath>
+						<!-- 设置web.xml所在位置 <descriptor>${basedir}/WebRoot/WEB-INF/web.xml</descriptor> -->
+					</webApp>
+					<httpConnector>
+						<!-- 设置端口 -->
+						<port>8080</port>
+					</httpConnector>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>movie-web</finalName>
+	</build>
 </project>

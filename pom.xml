@@ -6,10 +6,20 @@
 	<groupId>jindao.movie</groupId>
 	<artifactId>movie-master</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<description>manage movies</description>
 	<packaging>pom</packaging>
 
-	<name>movie-master</name>
+	<name>movie parent</name>
 	<url>http://maven.apache.org</url>
+
+	<developers>
+		<developer>
+			<id>amos</id>
+			<name>Amos Jindao</name>
+			<email>liusr@outlook.com</email>
+		</developer>
+	</developers>
+
 
 	<properties>
 		<junit.version>4.10</junit.version>
@@ -32,4 +42,19 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<encoding>utf-8</encoding>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
