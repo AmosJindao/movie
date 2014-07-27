@@ -11,6 +11,7 @@
   
   <artifactId>movie-commons</artifactId>
   
+  <!-- <packaging>jar</packaging> -->
   <name>movie-commons</name>
   <url>http://maven.apache.org</url>
   
