@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author amos
  * @date Jul 26, 2014 11:21:33 AM
  */
-@Controller
+@Controller("account")
 @RequestMapping("account")
 public class AccountController {
 
