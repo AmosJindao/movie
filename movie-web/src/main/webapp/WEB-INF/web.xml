@@ -8,8 +8,12 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:spring/context-*.xml</param-value>
 	</context-param>
+	<!-- <context-param>
+		<param-name>logbackConfigLocation</param-name>
+		<param-value>classpath:log/logback.xml</param-value>
+	</context-param> -->
 
-	<!-- 防止请求的url乱码 -->
+	<!-- 將请求的url的字符編碼設爲UTF-8 -->
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -30,6 +34,9 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	<!-- <listener>
+		<listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
+	</listener> -->
 
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
@@ -44,5 +51,5 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
-	
+
 </web-app>
