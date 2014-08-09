@@ -6,11 +6,12 @@
 	<parent>
 		<groupId>jindao.movie</groupId>
 		<artifactId>movie-master</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>movie-commons</artifactId>
+	
 	<packaging>jar</packaging>
 	
 	<name>movie-commons</name>
