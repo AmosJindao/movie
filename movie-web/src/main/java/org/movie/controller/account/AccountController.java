@@ -1,7 +1,7 @@
-package org.movie.controller;
+package org.movie.controller.account;
 
+import org.movie.controller.BaseController;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller("account")
 @RequestMapping("account")
-public class AccountController {
+public class AccountController extends BaseController{
 
 	@RequestMapping(value = "login.do")
 	@ResponseBody
@@ -29,11 +29,5 @@ public class AccountController {
 			throw new RuntimeException("exception Test;");
 		
 		return result;
-	}
-	
-	@ExceptionHandler
-	@ResponseBody
-	public String exceptionHandle(Throwable e){
-		return e.getMessage();
 	}
 }

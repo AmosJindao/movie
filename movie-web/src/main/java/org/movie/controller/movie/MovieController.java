@@ -1,15 +1,17 @@
-package org.movie.controller;
+package org.movie.controller.movie;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.movie.bean.Movie;
+import org.movie.controller.BaseController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author amos
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller("movie")
 @RequestMapping("movie")
-public class MovieController {
+public class MovieController extends BaseController {
 	
 	private static Logger log = LoggerFactory.getLogger(MovieController.class);
 	
@@ -36,5 +38,21 @@ public class MovieController {
 		map.put("name", movie.getMovieName());
 		
 		return map;
+	}
+	
+	@RequestMapping("movieDetail.do")
+	@ResponseBody
+	public ModelAndView movieDetail(){
+	/*	System.out.println(movie == null);
+		System.out.println(movie.getId()+movie.getMovieName());*/
+		
+		log.debug("tests");
+		log.info("tests info");
+		
+		ModelAndView mv = new ModelAndView("movie/movie1");
+		
+		mv.addObject("name", "movieDetail");
+		
+		return mv;
 	}
 }
