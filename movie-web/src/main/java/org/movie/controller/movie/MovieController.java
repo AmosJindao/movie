@@ -49,7 +49,7 @@ public class MovieController extends BaseController {
 		log.debug("tests");
 		log.info("tests info");
 		
-		ModelAndView mv = new ModelAndView("movie/movie1");
+		ModelAndView mv = new ModelAndView("movie/movie");
 		
 		mv.addObject("name", "movieDetail");
 		
