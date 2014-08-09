@@ -1,6 +1,5 @@
 package org.movie.commons;
 
-import java.nio.charset.Charset;
 
 /**
  * 各類常量
@@ -8,5 +7,5 @@ import java.nio.charset.Charset;
  * @date Jul 27, 2014 8:41:35 PM
  */
 public interface Constants {
-	
+	public static final String MODEL_DEBUG = "debug";
 }
