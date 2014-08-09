@@ -5,7 +5,7 @@
 
 	<groupId>jindao.movie</groupId>
 	<artifactId>movie-master</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<description>manage movies</description>
 	<packaging>pom</packaging>
 
@@ -22,6 +22,7 @@
 
 
 	<properties>
+		<servlet.version>2.5</servlet.version>
 		<springframework.version>4.0.3.RELEASE</springframework.version>
 		<slf4j.version>1.7.6</slf4j.version>
 		<logback.version>1.1.2</logback.version>
@@ -40,8 +41,18 @@
 			<dependency>
 				<groupId>jindao.movie</groupId>
 				<artifactId>movie-commons</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
+				<scope>system</scope>
+				<systemPath>/var/mvnLocalRepo/jindao/movie/movie-commons/1.0.0/movie-commons-1.0.0.jar</systemPath>
 			</dependency>
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>${servlet.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
@@ -60,6 +71,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${springframework.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>spring-beans</artifactId>
 				<version>${springframework.version}</version>
 			</dependency>
@@ -72,6 +88,13 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
 				<version>${springframework.version}</version>
+			</dependency>
+
+			<!-- Freemarker -->
+			<dependency>
+				<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+				<version>2.3.20</version>
 			</dependency>
 
 			<!-- json -->
@@ -122,8 +145,6 @@
 				<artifactId>logback-ext-spring</artifactId>
 				<version>0.1.2</version>
 			</dependency>
-
-
 
 			<dependency>
 				<groupId>junit</groupId>
