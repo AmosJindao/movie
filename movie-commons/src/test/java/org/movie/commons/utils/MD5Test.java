@@ -1,7 +1,8 @@
-package org.movie.commons;
+package org.movie.commons.utils;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.movie.commons.utils.MD5;
 
 /**
  * @author amos
