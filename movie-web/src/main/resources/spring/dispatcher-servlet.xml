@@ -55,8 +55,8 @@
 	<!-- Freemarker視圖解析 -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
-    	<property name="viewNames" value="*.ftl"/>
+		<!-- <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/> 默認就是此配置 -->
+    	<!-- <property name="viewNames" value="*"/>  viewNames和suffix不要同時配置 -->
 		<property name="contentType" value="text/html;charset=UTF-8" />
 		<property name="cache" value="true" />
 		<property name="prefix" value="" />

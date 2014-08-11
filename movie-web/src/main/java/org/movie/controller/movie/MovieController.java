@@ -3,6 +3,9 @@ package org.movie.controller.movie;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.movie.bean.Movie;
 import org.movie.controller.BaseController;
 import org.slf4j.Logger;
@@ -26,10 +29,6 @@ public class MovieController extends BaseController {
 	@RequestMapping("movieList.do")
 	@ResponseBody
 	public Map<String, Object> moviePage(@RequestBody Movie movie){
-	/*	System.out.println(movie == null);
-		System.out.println(movie.getId()+movie.getMovieName());*/
-		
-		log.debug("tests");
 		log.info("tests info");
 		
 		Map<String, Object> map = new HashMap<String, Object>();
@@ -42,14 +41,12 @@ public class MovieController extends BaseController {
 	
 	@RequestMapping("movieDetail.do")
 	@ResponseBody
-	public ModelAndView movieDetail(){
-	/*	System.out.println(movie == null);
-		System.out.println(movie.getId()+movie.getMovieName());*/
-		
-		log.debug("tests");
+	public ModelAndView movieDetail(HttpServletRequest request,HttpServletResponse response){
 		log.info("tests info");
 		
 		ModelAndView mv = new ModelAndView("movie/movie");
+		
+//		System.out.println("contextPath:"+request.getContextPath());
 		
 		mv.addObject("name", "movieDetail");
 		
