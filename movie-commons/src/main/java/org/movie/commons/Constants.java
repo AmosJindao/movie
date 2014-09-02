@@ -7,5 +7,9 @@ package org.movie.commons;
  * @date Jul 27, 2014 8:41:35 PM
  */
 public interface Constants {
-	public static final String MODEL_DEBUG = "debug";
+	/** 開發模式 調試 */
+	public static final String DEV_MODEL_DEBUG = "debug";
+	
+	/** 編碼格式 UTF_8 */
+	public static final String CHARSET_UTF8 = "UTF-8";
 }

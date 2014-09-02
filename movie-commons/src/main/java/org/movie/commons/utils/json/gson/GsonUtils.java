@@ -1,4 +1,4 @@
-package org.movie.commons.utils;
+package org.movie.commons.utils.json.gson;
 
 import java.util.Date;
 
