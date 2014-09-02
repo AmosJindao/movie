@@ -1,0 +1,26 @@
+package message;
+
+option java_package="org.message";
+option java_outer_classname="Message";
+
+message KeyValue{
+	required string key=1;
+	optional string value=2;
+}
+
+message MMap{
+	repeated KeyValue keyValue=1;
+}
+
+message KeyValue1{
+	required string key=1;
+	optional MMap value=2;
+}
+
+message MMap1{
+	repeated KeyValue1 keyValue=1;
+}
+
+message MList{
+	repeated MMap m=1;
+}
