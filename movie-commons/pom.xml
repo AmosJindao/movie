@@ -11,9 +11,9 @@
 	</parent>
 
 	<artifactId>movie-commons</artifactId>
-	
+
 	<packaging>jar</packaging>
-	
+
 	<name>movie-commons</name>
 	<url>http://maven.apache.org</url>
 
@@ -28,8 +28,27 @@
 		</dependency>
 
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<finalName>movie-commons</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
