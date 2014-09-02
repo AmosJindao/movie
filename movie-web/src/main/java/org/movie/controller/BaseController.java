@@ -19,7 +19,7 @@ public class BaseController {
 			HttpServletResponse response, Exception e) {
 		ModelAndView mv = new ModelAndView();
 		
-		if(PropertiesLoader.getPropertyValue("model").equals(Constants.MODEL_DEBUG)){
+		if(PropertiesLoader.getPropertyValue("model").equals(Constants.DEV_MODEL_DEBUG)){
 			
 		}
 

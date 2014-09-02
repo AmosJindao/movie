@@ -1,6 +1,6 @@
 package org.movie.commons.utils;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 /**
  * @author amos

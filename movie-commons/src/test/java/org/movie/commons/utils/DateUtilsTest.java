@@ -5,7 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * @author amos
@@ -17,10 +18,11 @@ public class DateUtilsTest {
 	
 	@Test
 	public void testDateFormat() throws ParseException{
-		DateFormat df = new SimpleDateFormat(DateUtils.DATE_FORMAT_DEFAULT);
-		System.out.println(df.format(new Date()));
-		System.out.println(localFormat.format(new Date()));
+		String dateStr = "2014-08-02 11:58:20";
 		
-		Date date = df.parse("2014-08-02 11:58:20");
+		DateFormat df = new SimpleDateFormat(DateUtils.DATE_FORMAT_DEFAULT);
+		
+		Date date = df.parse(dateStr);
+		Assert.assertEquals(df.format(date), dateStr);
 	}
 }

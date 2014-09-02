@@ -1,12 +1,13 @@
-package org.movie.commons.utils;
+package org.movie.commons.utils.json.gson;
 
 import java.util.Date;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.movie.commons.utils.DateUtils;
+import org.movie.commons.utils.json.gson.GsonUtils;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 /**
  * @author amos
@@ -21,11 +22,13 @@ public class GsonUtilsTest {
 		
 		String oldJson = "{\"id\":98,\"name\":\"gson\",\"date\":\"2014-08-02 12:01:39\"}";
 		TestGson gson1 = gson.fromJson(oldJson, TestGson.class);
-		Assert.assertTrue("解析失敗", gson1 instanceof  TestGson);
+		Assert.assertTrue(gson1 instanceof  TestGson,"解析失敗" );
 		
 		String newJson = "{\"id\":98,\"name\":\"gson\",\"date\":"+System.currentTimeMillis()+"}";
 		TestGson gson2 = gson.fromJson(newJson, TestGson.class);
-		Assert.assertTrue("解析失敗", gson2 instanceof  TestGson);
+		Assert.assertNotNull(gson2);
+		Assert.assertTrue( gson2 instanceof  TestGson, "解析失敗");
+		Assert.assertNotNull(gson2.date);
 	}
 }
 
