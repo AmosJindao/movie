@@ -23,17 +23,33 @@
 
 	<properties>
 		<servlet.version>2.5</servlet.version>
+
 		<springframework.version>4.0.3.RELEASE</springframework.version>
+
 		<slf4j.version>1.7.6</slf4j.version>
 		<logback.version>1.1.2</logback.version>
+
 		<jackson.version>2.4.1</jackson.version>
+
 		<junit.version>4.10</junit.version>
+		<testng.version>6.8.8</testng.version>
+
+		<netty.version>4.0.23.Final</netty.version>
+
+		<mybatis.version>3.2.7</mybatis.version>
+		<mybatis.spring.version>1.2.2</mybatis.spring.version>
+
+		<mysql.connector.version>5.1.32</mysql.connector.version>
+
+		<tomcat.version>8.0.12</tomcat.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<modules>
 		<module>movie-commons</module>
 		<module>movie-web</module>
+		<module>movie-rpc</module>
 	</modules>
 
 	<dependencyManagement>
@@ -89,6 +105,29 @@
 				<artifactId>spring-webmvc</artifactId>
 				<version>${springframework.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>${springframework.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>${springframework.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${mybatis.spring.version}</version>
+			</dependency>
+
+			<!-- mybatis -->
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mybatis.version}</version>
+			</dependency>
 
 			<!-- Freemarker -->
 			<dependency>
@@ -119,6 +158,38 @@
 				<version>2.2.4</version>
 			</dependency>
 
+			<!-- protobuf -->
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>17.0</version>
+			</dependency>
+
+			<!-- JDBC connector -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
+			</dependency>
+
+			<!-- JDBC pool -->
+			<dependency>
+				<groupId>org.apache.tomcat</groupId>
+				<artifactId>tomcat-jdbc</artifactId>
+				<version>${tomcat.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-all</artifactId>
+				<version>${netty.version}</version>
+			</dependency>
+
 			<!-- log -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
@@ -146,12 +217,26 @@
 				<version>0.1.2</version>
 			</dependency>
 
+			<!-- test -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>${testng.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${springframework.version}</version>
+				<scope>test</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -173,6 +258,14 @@
 						<encoding>UTF-8</encoding>
 						<source>1.7</source>
 						<target>1.7</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.3</version>
+					<configuration>
+						<attach>true</attach>
 					</configuration>
 				</plugin>
 			</plugins>
