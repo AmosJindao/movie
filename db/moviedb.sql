@@ -51,7 +51,7 @@ CREATE TABLE `MOVIE`.`movie` (
   `name` VARCHAR(100) NOT NULL COMMENT '電影名稱',
   `director` VARCHAR(450) NULL COMMENT '導演',
   `tags` VARCHAR(450) NULL COMMENT '標籤，或者電影類型',
-  `screenwriter` VARCHAR(450) NULL COMMENT '編劇',
+  `screen_writer` VARCHAR(450) NULL COMMENT '編劇',
   `star` VARCHAR(450) NULL COMMENT '主演',
   `producer_country` VARCHAR(100) NULL COMMENT '製片國家或者地區',
   `language` VARCHAR(45) NULL COMMENT '語言',

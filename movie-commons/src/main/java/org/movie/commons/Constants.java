@@ -6,7 +6,9 @@ package org.movie.commons;
  * @author amos
  * @date Jul 27, 2014 8:41:35 PM
  */
-public interface Constants {
+public final class Constants {
+	private Constants(){}
+	
 	/** 開發模式 調試 */
 	public static final String DEV_MODEL_DEBUG = "debug";
 	

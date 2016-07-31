@@ -44,6 +44,8 @@
 		<mysql.connector.version>5.1.32</mysql.connector.version>
 
 		<tomcat.version>8.0.12</tomcat.version>
+		
+		<activiti.version>5.21.0</activiti.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -53,6 +55,9 @@
 		<module>movie-web</module>
 		<module>movie-rpc</module>
 		<module>movie-hadoop</module>
+		<module>movie-gui</module>
+		<module>movie-web-spring-boot</module>
+		<module>tests</module>
 	</modules>
 
 	<dependencyManagement>
@@ -61,8 +66,6 @@
 				<groupId>jindao.movie</groupId>
 				<artifactId>movie-commons</artifactId>
 				<version>1.0.0</version>
-				<scope>system</scope>
-				<systemPath>/var/mvnLocalRepo/jindao/movie/movie-commons/1.0.0/movie-commons-1.0.0.jar</systemPath>
 			</dependency>
 
 			<dependency>
@@ -170,7 +173,7 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>17.0</version>
+				<version>19.0</version>
 			</dependency>
 
 			<!-- JDBC connector -->
@@ -334,7 +337,7 @@
 				<artifactId>hadoop-yarn-applications-distributedshell</artifactId>
 				<version>${hadoop.version}</version>
 			</dependency>
-<dependency>
+			<dependency>
 				<groupId>org.apache.hadoop</groupId>
 				<artifactId>hadoop-yarn-applications-unmanaged-am-launcher</artifactId>
 				<version>${hadoop.version}</version>
@@ -414,6 +417,20 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- activiti -->
+			<!-- https://mvnrepository.com/artifact/org.activiti/activiti-engine -->
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-engine</artifactId>
+				<version>${activiti.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-spring</artifactId>
+				<version>${activiti.version}</version>
+			</dependency>
+
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -433,8 +450,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
 						<encoding>UTF-8</encoding>
-						<source>1.7</source>
-						<target>1.7</target>
+						<source>1.8</source>
+						<target>1.8</target>
 					</configuration>
 				</plugin>
 				<plugin>
