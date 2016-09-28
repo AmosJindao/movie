@@ -8,28 +8,18 @@
 		<artifactId>movie-master</artifactId>
 		<version>1.0.0</version>
 	</parent>
-
-	<artifactId>movie-rpc</artifactId>
-
-	<name>movie-rpc</name>
-
-	<url>http://maven.apache.org</url>
+	<artifactId>DS-Algo</artifactId>
+	<name>DS-Algo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<dependencies> 
-		<dependency>
-			<groupId>io.netty</groupId>
-			<artifactId>netty-all</artifactId>
-		</dependency>
-
+	<dependencies>
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>

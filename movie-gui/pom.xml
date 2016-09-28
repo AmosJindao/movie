@@ -4,7 +4,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>jindao.movie</groupId>
+		<groupId>amos</groupId>
 		<artifactId>movie-master</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -18,23 +18,30 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<dependencies>
-			<dependency>
-				<groupId>org.eclipse.swt</groupId>
-				<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
-				<version>4.3</version>
-			</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
 	<repositories>
 		<repository>
 			<id>swt-repo</id>
 			<url>https://raw.githubusercontent.com/maven-eclipse/swt-repo/master/</url>
 		</repository>
 	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.swt</groupId>
+			<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+			<version>4.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>

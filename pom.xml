@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>jindao.movie</groupId>
+	<groupId>amos</groupId>
 	<artifactId>movie-master</artifactId>
 	<version>1.0.0</version>
 	<description>manage movies</description>
@@ -20,32 +19,45 @@
 		</developer>
 	</developers>
 
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<layout>default</layout>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<!-- <repository> <id>jboss-public-repository-group</id> <name>JBoss Public 
+			Repository Group</name> <url>http://repository.jboss.org/nexus/content/groups/public</url> 
+			</repository> -->
+	</repositories>
 
 	<properties>
 		<servlet.version>2.5</servlet.version>
 
-		<hadoop.version>2.5.1</hadoop.version>
+		<hadoop.version>2.7.2</hadoop.version>
 
-		<springframework.version>4.0.3.RELEASE</springframework.version>
+		<springframework.version>4.3.2.RELEASE</springframework.version>
 
 		<slf4j.version>1.7.6</slf4j.version>
 		<logback.version>1.1.2</logback.version>
 
 		<jackson.version>2.4.1</jackson.version>
 
-		<junit.version>4.10</junit.version>
-		<testng.version>6.8.8</testng.version>
+		<junit.version>4.12</junit.version>
+		<testng.version>6.9.10</testng.version>
 
 		<netty.version>4.0.23.Final</netty.version>
 
 		<mybatis.version>3.2.7</mybatis.version>
 		<mybatis.spring.version>1.2.2</mybatis.spring.version>
 
-		<mysql.connector.version>5.1.32</mysql.connector.version>
+		<mysql.connector.version>6.0.3</mysql.connector.version>
 
 		<tomcat.version>8.0.12</tomcat.version>
-		
+
 		<activiti.version>5.21.0</activiti.version>
+		
+		<google.guava>19.0</google.guava>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -58,7 +70,8 @@
 		<module>movie-gui</module>
 		<module>movie-web-spring-boot</module>
 		<module>tests</module>
-	</modules>
+    	<module>ds-algo</module>
+  </modules>
 
 	<dependencyManagement>
 		<dependencies>
@@ -173,7 +186,7 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>19.0</version>
+				<version>${google.guava}</version>
 			</dependency>
 
 			<!-- JDBC connector -->

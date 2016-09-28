@@ -1,17 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>jindao.movie</groupId>
-    <artifactId>movie-master</artifactId>
-    <version>1.0.0</version>
-  </parent>
-  <artifactId>tests</artifactId>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>amos</groupId>
+		<artifactId>movie-master</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>tests</artifactId>
+	
+	<repositories>
+		<repository>
+			<id>swt-repo</id>
+			<url>https://raw.githubusercontent.com/maven-eclipse/swt-repo/master/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
-	</dependencies>  
-  
+		<dependency>
+			<groupId>org.eclipse.swt</groupId>
+			<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+			<version>4.3</version>
+		</dependency>
+	</dependencies>
+
 </project>

@@ -121,4 +121,17 @@ implements GenericHttpMessageConverter<Object> {
 		
 	}
 
+	@Override
+	public boolean canWrite(Type type, Class<?> clazz, MediaType mediaType) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void write(Object t, Type type, MediaType contentType, HttpOutputMessage outputMessage)
+			throws IOException, HttpMessageNotWritableException {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
