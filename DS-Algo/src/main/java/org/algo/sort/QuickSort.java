@@ -4,7 +4,7 @@ package org.algo.sort;
  * @author amos
  * @date 2016-10-15
  */
-public class QuickSort{
+public final class QuickSort{
     public static final void quickSort(int[] arr, int leftIdx, int rightIdx) {
         if(leftIdx >= rightIdx){
             return;
@@ -37,5 +37,9 @@ public class QuickSort{
         int tmp = arr[leftIdx];
         arr[leftIdx] = arr[rightIdx];
         arr[rightIdx] = tmp;
+    }
+
+    public static final void dualPivotQuickSort(int[] arr, int leftIdx, int rightIdx){
+        //TODO to implement dual-pivot quick sort
     }
 }
