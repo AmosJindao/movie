@@ -6,6 +6,13 @@
 	<artifactId>movie-master</artifactId>
 	<version>1.0.0</version>
 	<description>manage movies</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 	<packaging>pom</packaging>
 
 	<name>movie parent</name>
@@ -70,7 +77,7 @@
 		<module>movie-gui</module>
 		<module>movie-web-spring-boot</module>
 		<module>tests</module>
-    	<module>ds-algo</module>
+    	<module>DS-Algo</module>
   </modules>
 
 	<dependencyManagement>
@@ -86,6 +93,13 @@
 				<artifactId>servlet-api</artifactId>
 				<version>${servlet.version}</version>
 				<scope>provided</scope>
+			</dependency>
+
+			<!-- apache commons -->
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.10</version>
 			</dependency>
 
 			<dependency>
