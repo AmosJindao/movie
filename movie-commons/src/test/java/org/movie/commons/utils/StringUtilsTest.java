@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 /**
  * @author amos
- * @since 1.0, Aug 31, 2014 1:22:20 PM
+ * @since 1.0, Aug 31, 2014
  */
 @Test(groups={"strs","commons"})
 public class StringUtilsTest {
@@ -93,6 +93,18 @@ public class StringUtilsTest {
 		ch = '，';
 		Assert.assertEquals(StringUtils.isChineseByScript(ch), false);
 	}
+
+	@Test
+	public void randomString(){
+		Assert.expectThrows(IllegalArgumentException.class, ()->{
+			StringUtils.randomString(-1);
+		});
+
+		int length = 6;
+		String rStr = StringUtils.randomString(length);
+		Assert.assertNotNull(rStr);
+		Assert.assertEquals(length,rStr.length());
+	}
 	
 	@DataProvider(name="numericObj")
 	public Object[][] createNumericObj(){
@@ -104,18 +116,18 @@ public class StringUtilsTest {
 		
 		return  new Object[][] {{t1}};
 	}
-}
+	private class T1{
+		public String name;
+		public Date date;
+		public int age;
 
-class T1{
-	public String name;
-	public Date date;
-	public int age;
-	
-	public String toString(){
-		
-		if(date != null){
-			
+		public String toString(){
+
+			if(date != null){
+
+			}
+			return "12345";
 		}
-		return "12345";
 	}
 }
+

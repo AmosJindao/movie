@@ -3,7 +3,7 @@ package org.algo.sort;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-public class ShellTest extends SortParentTest {
+public class ShellTest extends SortTest{
     public static void main(String[] args) {
 		Random rd = new Random();
 		IntStream ints = rd.ints(10, 0, 100);

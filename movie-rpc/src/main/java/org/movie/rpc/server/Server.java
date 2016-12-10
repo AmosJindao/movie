@@ -3,18 +3,14 @@ package org.movie.rpc.server;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.http.HttpRequestDecoder;
-import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
 import org.movie.rpc.exception.RPCException;
-import org.movie.rpc.handler.TimeServerHandler;
-import org.movie.rpc.initializer.HttpSnoopServerInitializer;
+import org.movie.rpc.initializer.HttpServerInitializer;
 
 /**
  * @author amos
@@ -53,7 +49,7 @@ public class Server {
             b.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new HttpSnoopServerInitializer(sslCtx))
+                    .childHandler(new HttpServerInitializer(sslCtx))
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     .childOption(ChannelOption.TCP_NODELAY, true);
             ;

@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 /**
  *
  */
-public class MergeTest extends SortParentTest {
+public class MergeTest extends SortTest{
 
 	public static void main(String[] args) {
         Random rd = new Random();

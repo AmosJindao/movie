@@ -1,15 +1,24 @@
 package org.algo.sort;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 /**
  * @author amos
  * @date 2016-10-15
  */
-public class QuickSortTest extends  SortParentTest{
-    public static void main(String[] args) {
-        int[] arr = getRandomInts(10);
+public class QuickSortTest extends SortTest{
 
-        print(arr);
-        QuickSort.quickSort(arr, 0, arr.length-1);
-        print(arr);
+    @Test
+    public void quickSort() {
+        int[] arrLens = getRandomInts(10);
+
+        for (int len: arrLens) {
+            int[] arr = getRandomInts(len);
+            QuickSort.quickSort(arr, 0, arr.length - 1);
+
+            Assert.assertEquals(isAsc(arr), true);
+        }
     }
+
 }
