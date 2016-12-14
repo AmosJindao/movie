@@ -20,7 +20,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpRequest>{
 
-    private HttpRequest request;
+    private FullHttpRequest request;
     /**
      * Buffer that stores the response content
      */
@@ -31,8 +31,8 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
     }
 
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) {
-        if (msg instanceof HttpRequest) {
-            HttpRequest request = this.request = (HttpRequest) msg;
+        if (msg instanceof FullHttpRequest) {
+            FullHttpRequest request = this.request = (FullHttpRequest) msg;
 
             if (HttpUtil.is100ContinueExpected(request)) {
                 send100Continue(ctx);

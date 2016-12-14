@@ -52,7 +52,6 @@ public class Server {
                     .childHandler(new HttpServerInitializer(sslCtx))
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     .childOption(ChannelOption.TCP_NODELAY, true);
-            ;
 
             Channel ch = b.bind(PORT).sync().channel();
             System.err.println("Open your web browser and navigate to " +
