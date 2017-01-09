@@ -22,7 +22,6 @@ public class Server {
 
     private int port;
 
-
     public Server() {
     }
 

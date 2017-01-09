@@ -11,6 +11,8 @@ public class RandomIntTest{
     public static void main(String[] args) {
         IntStream ints = new Random().ints(6,0,100);
 
+//        ints.
+
         ints.forEach(i->{
             System.out.println(i);
         });
