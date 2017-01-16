@@ -5,12 +5,11 @@ import com.google.common.base.Stopwatch;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * this test shows that stream for-each is slower than original for-each on small size, like 100, 1000 and so on.
- * Created by liushengri on 2017/1/9.
+ * this test shows that stream for-each is slower than original for-each  in small size case, like 100, 1000 and so on.
+ * Created on 2017/1/9.
  */
 public class StreamTest {
     public static void main(String[] args) {
