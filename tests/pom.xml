@@ -25,6 +25,16 @@
 			<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
 			<version>4.3</version>
 		</dependency>
+
+		<dependency>
+			<groupId>jindao.movie</groupId>
+			<artifactId>movie-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>amos</groupId>
+			<artifactId>movie-commons</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
 </project>

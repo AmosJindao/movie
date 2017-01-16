@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 
 /**
  * @author amos
- * @date May 3, 2014 3:59:39 PM
+ * @date May 3, 2014 
  */
 public final class MD5 {
 	private static final char[] hexadecimal = { '0', '1', '2', '3', '4', '5',
