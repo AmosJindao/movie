@@ -10,6 +10,6 @@ public class GenCode {
     public static void main(String[] args) {
 //        System.out.println(new SetPropertyCodeGenerator(VndrContactVo.class).generateCode());
 //        System.out.println(new SetPropertyCodeGenerator(VndrAttachmentVo.class).generateCode());
-//        System.out.println(new SetPropertyCodeGenerator(VndrInfoVo.class).generateCode());
+//        System.out.println(new SetPropertyCodeGenerator(VndrInfoChk.class).generateCode());
     }
 }
