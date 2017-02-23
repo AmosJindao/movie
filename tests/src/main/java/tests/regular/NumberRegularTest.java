@@ -27,11 +27,14 @@ public class NumberRegularTest {
 //
 //        str=" 123 ";
 //        System.out.println(str+":"+isNumber(str));
-        str = "13686709826";
-        System.out.println(str + ":" + isMatch(RegularConstants.MOBILE_PHONE_PETTERN, str));
-
-        str = "371122198805046";
-        System.out.println(str + ":" + isMatch(RegularConstants.ID_CARD_PETTERN, str));
+//        str = "13686709826";
+//        System.out.println(str + ":" + isMatch(RegularConstants.MOBILE_PHONE_PETTERN, str));
+//
+//        str = "371122198805046";
+//        System.out.println(str + ":" + isMatch(RegularConstants.ID_CARD_PETTERN, str));
+        
+        str = "1@163.com";
+        System.out.println(str + ":" + isMatch(RegularConstants.EMAIL_PETTERN, str));
     }
 
     static boolean isNumber(String needCHeckedStr) {

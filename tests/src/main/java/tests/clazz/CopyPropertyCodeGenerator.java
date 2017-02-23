@@ -31,7 +31,7 @@ public class CopyPropertyCodeGenerator<T> {
     }
 
     public static void main(String[] args) {
-//        System.out.println(new CopyPropertyCodeGenerator(VndrInfoChk.class).generateCode());
+        System.out.println(new CopyPropertyCodeGenerator(VndrInfoChk.class).generateCode());
     }
 }
 

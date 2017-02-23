@@ -3,16 +3,16 @@ package tests.random;
 import java.util.Random;
 
 /**
- * Created on 2017/2/5.
- * 24 base character generate a string of length 16
+ * created by 2017 2/22
+ * 36 base character generate a string of length 16
  * <p>
- * 45 bit <br>
- * -9 random number--------31 integer-------4 bit type <br>
- * 000000 | 0000000000000000000000000000000 | 0000
+ * 83 bits <br>
+ * -5 random number--------43bits timestamp integer-------4 bit type <br>
+ * 00000 | 00...0 | 0000
  * </p>
  * log2(34^8-1)
  */
-public class RandomStrTest {
+public class Random16CodeGenerator {
     static final char[] BASE = "PLKI890OMJU7YGVBNH6TFCDE345rXSW2QZA1".toCharArray();
 
     static final int NUM_TYPE_BIT = 4;
