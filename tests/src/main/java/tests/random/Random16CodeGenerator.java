@@ -6,9 +6,10 @@ import java.util.Random;
  * created by 2017 2/22
  * 36 base character generate a string of length 16
  * <p>
- * 83 bits <br>
- * -5 random number--------43bits timestamp integer-------4 bit type <br>
- * 00000 | 00...0 | 0000
+ * 82 bits <br>
+ * 16 random-------|  43bits timestamp---|  7    |   16 ran|
+ *  4   |  12      |                     |       |         |
+ * 00 ... 0        |    00...0           | 00...0|00...0   |
  * </p>
  * log2(34^8-1)
  */
