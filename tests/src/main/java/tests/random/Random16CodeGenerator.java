@@ -2,13 +2,13 @@ package tests.random;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Sets;
+import org.apache.commons.lang3.text.StrBuilder;
 
 import java.math.BigInteger;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.*;
-
-import static tests.random.RandomStrTest.MAX_RAN_NUM;
-import static tests.random.RandomStrTest.NUM_INT_BIT;
-import static tests.random.RandomStrTest.NUM_TYPE_BIT;
 
 /**
  * created by 2017 2/22
@@ -20,10 +20,11 @@ import static tests.random.RandomStrTest.NUM_TYPE_BIT;
  * 00 ... 0        |    00...0           | 00...0|00...0   |
  * 4   |         78                                        |
  * </p>
- * log2(34^8-1)
+ * log2(36^16-1)
  */
 public class Random16CodeGenerator {
-    static final char[] BASE = "PLKI890OMJU7YGVBNH6TFCDE345rXSW2QZA1".toCharArray();
+    static final String BASE_STR = "PLKI890OMJU7YGVBNH6TFCDE345RXSW2QZA1";
+    static final char[] BASE = BASE_STR.toCharArray();
 
     static final int LOWER_RAN_PART_BIT = 16;
     static final int BIZ_PART_BIT = 7;
@@ -42,22 +43,40 @@ public class Random16CodeGenerator {
     static final BigInteger ZERO_BIG = new BigInteger("0");
 
     public static void main(String[] args) {
-        int num = 1000000;
+//        generateTest();
+
+//        1930796303423795376773751---code:rEUKMN19KS89QV5M---length:16
+        BigInteger reBi = decode("REUKMN19KS89QV5M");
+
+        BigInteger timeStamp = getTimeStamp(reBi);
+
+        System.out.println(reBi+"\t"+timeStamp);
+
+//        int nons = Long.valueOf(timeStamp.longValue() % 1000).intValue();
+//
+//        System.out.println(nons);
+        
+        System.out.println(LocalDateTime.ofEpochSecond(timeStamp.longValue()/1000,
+                Long.valueOf(timeStamp.longValue() % 1000).intValue() * 1000000, ZoneOffset.of("+08:00")));
+    }
+
+    static void generateTest(){
+        int num = 10;
 
         Set<String> codes = Sets.newHashSetWithExpectedSize(num);
 
         Stopwatch st = Stopwatch.createUnstarted();
-        
+
         st.start();
         for (int i = 1; i <= num; i++) {
             BigInteger finalBigInteger = gennum(new BigInteger("5"));
 
             String code = genCod(finalBigInteger);
 
-//            System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
-//            if (codes.contains(code)) {
-//                System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
-//            }
+            System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
+            if (codes.contains(code)) {
+                System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
+            }
 
             codes.add(code);
         }
@@ -65,7 +84,7 @@ public class Random16CodeGenerator {
 
         System.out.println("add:"+num+"\trealNum:"+codes.size()+"\t" +st);
     }
-
+    
     static BigInteger gennum(BigInteger bizType) {
         BigInteger finalBigInteger = new BigInteger("0");
 
@@ -122,5 +141,39 @@ public class Random16CodeGenerator {
         }
 
         return upperRandom;
+    }
+    
+    private static BigInteger decode(String code){
+        BigInteger reBi = new BigInteger("0");
+        
+        BigInteger bitBase = new BigInteger("1");
+                
+        BigInteger base = new BigInteger(String.valueOf(BASE.length));
+        
+        char[] codeArr = code.toCharArray();
+        for(char cdc:codeArr){
+            int idx = BASE_STR.indexOf(cdc);
+
+            reBi = reBi.add(bitBase.multiply(new BigInteger(String.valueOf(idx))));
+
+            bitBase = bitBase.multiply(base);
+        }
+        
+        return reBi;
+    }
+    
+    static BigInteger getTimeStamp(BigInteger srcBi){
+        BigInteger timeStampTmp = srcBi.shiftRight(TIME_PART_SHIFT_BIT);
+
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<TIME_PART_BIT; i++){
+            sb.append("1");
+        }
+        
+        BigInteger andTar = new BigInteger(sb.toString(),2);
+        
+        BigInteger timeStamp = timeStampTmp.and(andTar);
+        
+        return timeStamp;
     }
 }
