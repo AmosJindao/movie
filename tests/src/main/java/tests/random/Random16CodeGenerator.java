@@ -43,25 +43,13 @@ public class Random16CodeGenerator {
     static final BigInteger ZERO_BIG = new BigInteger("0");
 
     public static void main(String[] args) {
-//        generateTest();
+        generateTest();
 
-//        1930796303423795376773751---code:rEUKMN19KS89QV5M---length:16
-        BigInteger reBi = decode("REUKMN19KS89QV5M");
-
-        BigInteger timeStamp = getTimeStamp(reBi);
-
-        System.out.println(reBi+"\t"+timeStamp);
-
-//        int nons = Long.valueOf(timeStamp.longValue() % 1000).intValue();
-//
-//        System.out.println(nons);
-        
-        System.out.println(LocalDateTime.ofEpochSecond(timeStamp.longValue()/1000,
-                Long.valueOf(timeStamp.longValue() % 1000).intValue() * 1000000, ZoneOffset.of("+08:00")));
+//        decodeTest();
     }
 
     static void generateTest(){
-        int num = 10;
+        int num = 10000000;
 
         Set<String> codes = Sets.newHashSetWithExpectedSize(num);
 
@@ -69,20 +57,35 @@ public class Random16CodeGenerator {
 
         st.start();
         for (int i = 1; i <= num; i++) {
-            BigInteger finalBigInteger = gennum(new BigInteger("5"));
-
-            String code = genCod(finalBigInteger);
-
-            System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
-            if (codes.contains(code)) {
-                System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
+            while(true) {
+                BigInteger finalBigInteger = gennum(new BigInteger("5"));
+                String code = genCod(finalBigInteger);
+                
+//                System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
+                
+                if(codes.add(code)) {
+                    break;
+                }else {
+                    System.out.println(i + ":" + finalBigInteger + "---code:" + code + "---length:" + code.length());
+                }
             }
 
-            codes.add(code);
         }
         st.stop();
 
         System.out.println("add:"+num+"\trealNum:"+codes.size()+"\t" +st);
+    }
+    
+    static void decodeTest(){
+        //        1930796303423795376773751---code:rEUKMN19KS89QV5M---length:16
+        BigInteger reBi = decode("REUKMN19KS89QV5M");
+
+        BigInteger timeStamp = getTimeStamp(reBi);
+
+        System.out.println(reBi+"\t"+timeStamp);
+
+        System.out.println(LocalDateTime.ofEpochSecond(timeStamp.longValue()/1000,
+                Long.valueOf(timeStamp.longValue() % 1000).intValue() * 1000000, ZoneOffset.of("+08:00")));
     }
     
     static BigInteger gennum(BigInteger bizType) {
