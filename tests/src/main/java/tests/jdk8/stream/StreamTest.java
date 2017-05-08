@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  */
 public class StreamTest {
     public static void main(String[] args) {
-        Set<Integer> sets = genInts(1000);
+        Set<Integer> sets = genInts(1000000);
 
         Stopwatch stopwatch = Stopwatch.createUnstarted();
 
@@ -30,10 +30,16 @@ public class StreamTest {
         stopwatch.reset();
         stopwatch.start();
 
-        sets.stream().filter((i) -> {
-            return i > 10;
-        }).forEach((j) -> {
-            //
+//        sets.stream().filter((i) -> {
+//            return i > 10;
+//        }).forEach((j) -> {
+//            //
+//        });
+
+        sets.stream().forEach((j) -> {
+            if (j > 10) {
+                //ignore
+            }
         });
         stopwatch.stop();
 
