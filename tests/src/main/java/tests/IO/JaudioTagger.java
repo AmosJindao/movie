@@ -20,7 +20,7 @@ public class JaudioTagger {
         Files.list(Paths.get("E:\\tmp\\enm\\dailyen_mp3tt\\esl")).forEach(path -> {
             try {
                 MP3File file = new MP3File(path.toFile());
-                ID3v22Frame id3v22Frame = (ID3v22Frame) file.getID3v2Tag().frameMap.get("TT2");//TIT2 TT2
+                ID3v22Frame id3v22Frame = (ID3v22Frame) file.getID3v2Tag().frameMap.get("TT3");//TIT2 TT2 TT3
                 String songName = id3v22Frame.getContent();
 
 //                id3v22Frame = (ID3v22Frame) file.getID3v2Tag().frameMap.get("TP1");//TPE1
