@@ -1,4 +1,4 @@
-package org.movie.gui;
+package org.jdbc.gui;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
@@ -13,7 +13,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.jdbc.gui.menu.MenuBuilder;
 import org.jdbc.gui.toolbar.ToolBarBuilder;
-import org.movie.gui.shell.ShellBuilder;
+import org.jdbc.gui.shell.ShellBuilder;
 
 /**
  * start here

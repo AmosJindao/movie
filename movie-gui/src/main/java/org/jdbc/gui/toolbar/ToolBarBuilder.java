@@ -2,7 +2,6 @@ package org.jdbc.gui.toolbar;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.layout.RowData;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
@@ -36,7 +35,7 @@ public class ToolBarBuilder {
 		toolBar.setLayoutData(LayoutData);
 		ToolItem newItem = new ToolItem(toolBar,SWT.PUSH);
 		//新建了一个ToolItem
-		newItem.setImage(new Image(newItem.getDisplay(),"images/new.png"));
+		newItem.setImage(new Image(newItem.getDisplay(), "images/new.png"));
 		//为这个ToolItem 设置一个图标
 		newItem.setToolTipText("新建");//设置鼠标放在Item上时提示的语句；
 //		newItem.addSelectionListener(new MenuItemListener(shell));

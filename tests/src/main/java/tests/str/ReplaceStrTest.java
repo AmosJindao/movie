@@ -1,7 +1,5 @@
 package tests.str;
 
-import org.apache.commons.codec.binary.Hex;
-
 /**
  * Created by liushengri on 2017/2/22.
  */

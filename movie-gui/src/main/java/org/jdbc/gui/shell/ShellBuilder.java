@@ -1,4 +1,4 @@
-package org.movie.gui.shell;
+package org.jdbc.gui.shell;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
@@ -47,7 +47,7 @@ public class ShellBuilder {
 		shell.setSize(shellWidth, shellHeight);
 
 		shell.setText("amos tools");
-		shell.setImage(new Image(display, "images/toolbox.png"));
+		shell.setImage(new Image(display, System.getProperty("user.dir")+ "/movie-gui/images/toolbox.png"));
 
 		shell.setLayout(rowLayout);
 		

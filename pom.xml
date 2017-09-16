@@ -86,7 +86,7 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>jindao.movie</groupId>
+				<groupId>amos</groupId>
 				<artifactId>movie-commons</artifactId>
 				<version>1.0.0</version>
 			</dependency>

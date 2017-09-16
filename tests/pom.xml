@@ -27,7 +27,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>jindao.movie</groupId>
+			<groupId>amos</groupId>
 			<artifactId>movie-commons</artifactId>
 		</dependency>
 		<dependency>
