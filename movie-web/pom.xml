@@ -134,7 +134,7 @@
 	</dependencies>
 
 	<build>
-		<plugins>
+		<!--<plugins>
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -143,15 +143,15 @@
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
 						<contextPath>/</contextPath>
-						<!-- 设置web.xml所在位置 <descriptor>${basedir}/WebRoot/WEB-INF/web.xml</descriptor> -->
+						&lt;!&ndash; 设置web.xml所在位置 <descriptor>${basedir}/WebRoot/WEB-INF/web.xml</descriptor> &ndash;&gt;
 					</webApp>
 					<httpConnector>
-						<!-- 设置端口 -->
+						&lt;!&ndash; 设置端口 &ndash;&gt;
 						<port>8080</port>
 					</httpConnector>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>-->
 		<finalName>movie-web</finalName>
 	</build>
 </project>

@@ -21,5 +21,8 @@ public class StrTest {
         System.out.println(bi.toString()+":"+bi.bitCount()+":"+bi.bitLength());
         
         new Random().nextInt(4096);
+        
+        String ss = "/files/test/png/test_ab(abcdefghj)fd/files/test/pngfdsd/abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdeffffffffffffffffghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijk";
+        System.out.println(ss.length());
     }
 }

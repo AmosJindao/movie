@@ -18,4 +18,5 @@ org\movie\commons\utils\CommonUtils.class
 org\movie\commons\utils\http\WebUtils$1.class
 org\movie\commons\utils\http\FileItem.class
 org\movie\commons\utils\ini\SectionProperty.class
+org\movie\commons\utils\ThumbnailatorUtils.class
 org\movie\commons\utils\ini\Section.class

@@ -18,5 +18,10 @@ public class ReplaceStrTest {
         System.out.println(pathStr);
 
 //      Hex.decodeHex()
+        
+        String url = ":http://192.168.103.25:8088/order.html?bizModNo=1&itemList=[{\"skuNo\":\"275930120240267265\",\"purchaseQty\":1,\"redeemCode\":\"3D44CFE79C08000\",\"skuGrpNo\":\"900600000\"}]&custNo=278559599823491072";
+   
+        
+   
     }
 }
