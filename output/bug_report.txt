@@ -1,0 +1,22 @@
+Tom Jones
+	reportedBy: Corazza
+	classname: tests.annotations.javapackage.ClosedCurve
+	description: 
+	severity: 1
+
+	reportedBy: Corazza
+	classname: tests.annotations.javapackage.Circle
+	description: computePerimeter incorrect
+	severity: 0
+
+Joe Smith
+	reportedBy: Corazza
+	classname: tests.annotations.javapackage.DataMiner
+	description: Should use Logger
+	severity: 1
+
+	reportedBy: Corazza
+	classname: tests.annotations.javapackage.Rectangle
+	description: computePerimeter incorrect
+	severity: 2
+
