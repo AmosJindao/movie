@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * Created by liushengri on 2017/3/23.
  */
 public class ThreadTest1 {
-    static Queue<Integer> sque = new LinkedList<>();
+    static java.util.Queue<Integer> sque = new LinkedList<>();
 
     public static void main(String[] args) {
         new Thread(new ThreadA()).start();

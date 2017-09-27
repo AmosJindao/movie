@@ -1,6 +1,6 @@
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\DateUtilsTest.java
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\json\gson\GsonUtilsTest.java
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\PropertiesLoaderTest.java
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\SkipListTest.java
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\StringUtilsTest.java
-E:\java\japps\movie\movie-commons\src\test\java\org\movie\commons\utils\MD5Test.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/MD5Test.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/SkipListTest.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/DateUtilsTest.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/StringUtilsTest.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/PropertiesLoaderTest.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/json/gson/GsonUtilsTest.java

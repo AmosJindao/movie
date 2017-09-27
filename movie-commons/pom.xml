@@ -37,14 +37,14 @@
 		</dependency>
 
 		<!-- activiti -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-engine</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-spring</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -52,14 +52,24 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.jyaml</groupId>
-			<artifactId>jyaml</artifactId>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>net.coobird</groupId>
 			<artifactId>thumbnailator</artifactId>
 		</dependency>
+
+        <!-- slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
 
 	</dependencies>
 

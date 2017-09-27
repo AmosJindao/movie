@@ -8,10 +8,32 @@ import org.junit.Test;
  * @date 2017-09-24
  */
 public class MetaDataServiceTest{
-    MetaDataService metaDataService = new MetaDataServiceImpl();
+    MetaDataServiceImpl metaDataService = new MetaDataServiceImpl();
 
     @Test
-    public void getSchemas(){
+    public void getTables() {
+        metaDataService.getTables();
+    }
+
+    @Test
+    public void getHelp() {
+        System.out.println(metaDataService.getHelp());
+    }
+
+    @Test
+    public void getSchemas() {
         metaDataService.getSchemas();
     }
+
+    @Test
+    public void getPrivileges() {
+        metaDataService.getPrivileges().forEach(privilege -> System.out.println(privilege.getAction() + " " + privilege.getTarget()));
+    }
+
+    @Test
+    public void getPrivilegesByUser() {
+        metaDataService.getPrivilegesByUser();
+    }
+
+
 }

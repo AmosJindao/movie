@@ -18,7 +18,7 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
-			<groupId>jindao.movie</groupId>
+			<groupId>amos</groupId>
 			<artifactId>movie-commons</artifactId>
 		</dependency>
 
