@@ -86,7 +86,8 @@
 		<module>tests</module>
     	<module>DS-Algo</module>
 		<module>database-service</module>
-	</modules>
+        <module>design-pattern</module>
+    </modules>
 
 	<dependencyManagement>
 		<dependencies>
