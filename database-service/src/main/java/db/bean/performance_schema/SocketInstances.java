@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT EVENT_NAME AS eventName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, THREAD_ID AS threadId, SOCKET_ID AS socketId, IP AS ip, PORT AS port, STATE AS state FROM performance_schema.socket_instances */
 /**
 */
 public class SocketInstances{

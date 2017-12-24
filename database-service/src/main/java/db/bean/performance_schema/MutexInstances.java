@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT NAME AS name, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, LOCKED_BY_THREAD_ID AS lockedByThreadId FROM performance_schema.mutex_instances */
 /**
 */
 public class MutexInstances{

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT THREAD_ID AS threadId, EVENT_ID AS eventId, END_EVENT_ID AS endEventId, EVENT_NAME AS eventName, SOURCE AS source, TIMER_START AS timerStart, TIMER_END AS timerEnd, TIMER_WAIT AS timerWait, WORK_COMPLETED AS workCompleted, WORK_ESTIMATED AS workEstimated, NESTING_EVENT_ID AS nestingEventId, NESTING_EVENT_TYPE AS nestingEventType FROM performance_schema.events_stages_history */
 /**
 */
 public class EventsStagesHistory{

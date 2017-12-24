@@ -18,7 +18,7 @@ public class DBConnectionFactoryTest{
     @Test
     public void getMysqlConnection() {
 //        jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&zeroDateTimeBehavior=convertToNull
-        Connection conn = DBConnectionFactory.getMysqlConnection(
+        Connection conn = DBConnFactory.getMysqlConnection(
                 "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8",
                 "root", "root123");
 

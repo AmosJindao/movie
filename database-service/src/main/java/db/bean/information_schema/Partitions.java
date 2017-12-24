@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, PARTITION_NAME AS partitionName, SUBPARTITION_NAME AS subpartitionName, PARTITION_ORDINAL_POSITION AS partitionOrdinalPosition, SUBPARTITION_ORDINAL_POSITION AS subpartitionOrdinalPosition, PARTITION_METHOD AS partitionMethod, SUBPARTITION_METHOD AS subpartitionMethod, PARTITION_EXPRESSION AS partitionExpression, SUBPARTITION_EXPRESSION AS subpartitionExpression, PARTITION_DESCRIPTION AS partitionDescription, TABLE_ROWS AS tableRows, AVG_ROW_LENGTH AS avgRowLength, DATA_LENGTH AS dataLength, MAX_DATA_LENGTH AS maxDataLength, INDEX_LENGTH AS indexLength, DATA_FREE AS dataFree, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime, CHECK_TIME AS checkTime, CHECKSUM AS checksum, PARTITION_COMMENT AS partitionComment, NODEGROUP AS nodegroup, TABLESPACE_NAME AS tablespaceName FROM information_schema.PARTITIONS */
 /**
 */
 public class Partitions{

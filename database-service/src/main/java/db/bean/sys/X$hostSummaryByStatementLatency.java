@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, total AS total, total_latency AS totalLatency, max_latency AS maxLatency, lock_latency AS lockLatency, rows_sent AS rowsSent, rows_examined AS rowsExamined, rows_affected AS rowsAffected, full_scans AS fullScans FROM sys.x$host_summary_by_statement_latency */
 /**VIEW
 */
 public class X$hostSummaryByStatementLatency{

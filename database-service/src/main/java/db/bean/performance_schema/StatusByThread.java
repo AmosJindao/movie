@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT THREAD_ID AS threadId, VARIABLE_NAME AS variableName, VARIABLE_VALUE AS variableValue FROM performance_schema.status_by_thread */
 /**
 */
 public class StatusByThread{

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT THREAD_ID AS threadId, NAME AS name, TYPE AS type, PROCESSLIST_ID AS processlistId, PROCESSLIST_USER AS processlistUser, PROCESSLIST_HOST AS processlistHost, PROCESSLIST_DB AS processlistDb, PROCESSLIST_COMMAND AS processlistCommand, PROCESSLIST_TIME AS processlistTime, PROCESSLIST_STATE AS processlistState, PROCESSLIST_INFO AS processlistInfo, PARENT_THREAD_ID AS parentThreadId, ROLE AS role, INSTRUMENTED AS instrumented, HISTORY AS history, CONNECTION_TYPE AS connectionType, THREAD_OS_ID AS threadOsId FROM performance_schema.threads */
 /**
 */
 public class Threads{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT total_allocated AS totalAllocated FROM sys.memory_global_total */
 /**VIEW
 */
 public class MemoryGlobalTotal{

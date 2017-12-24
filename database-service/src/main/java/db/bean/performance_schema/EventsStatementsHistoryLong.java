@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT THREAD_ID AS threadId, EVENT_ID AS eventId, END_EVENT_ID AS endEventId, EVENT_NAME AS eventName, SOURCE AS source, TIMER_START AS timerStart, TIMER_END AS timerEnd, TIMER_WAIT AS timerWait, LOCK_TIME AS lockTime, SQL_TEXT AS sqlText, DIGEST AS digest, DIGEST_TEXT AS digestText, CURRENT_SCHEMA AS currentSchema, OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, MYSQL_ERRNO AS mysqlErrno, RETURNED_SQLSTATE AS returnedSqlstate, MESSAGE_TEXT AS messageText, ERRORS AS errors, WARNINGS AS warnings, ROWS_AFFECTED AS rowsAffected, ROWS_SENT AS rowsSent, ROWS_EXAMINED AS rowsExamined, CREATED_TMP_DISK_TABLES AS createdTmpDiskTables, CREATED_TMP_TABLES AS createdTmpTables, SELECT_FULL_JOIN AS selectFullJoin, SELECT_FULL_RANGE_JOIN AS selectFullRangeJoin, SELECT_RANGE AS selectRange, SELECT_RANGE_CHECK AS selectRangeCheck, SELECT_SCAN AS selectScan, SORT_MERGE_PASSES AS sortMergePasses, SORT_RANGE AS sortRange, SORT_ROWS AS sortRows, SORT_SCAN AS sortScan, NO_INDEX_USED AS noIndexUsed, NO_GOOD_INDEX_USED AS noGoodIndexUsed, NESTING_EVENT_ID AS nestingEventId, NESTING_EVENT_TYPE AS nestingEventType, NESTING_EVENT_LEVEL AS nestingEventLevel FROM performance_schema.events_statements_history_long */
 /**
 */
 public class EventsStatementsHistoryLong{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT thread_id AS threadId, ssl_version AS sslVersion, ssl_cipher AS sslCipher, ssl_sessions_reused AS sslSessionsReused FROM sys.session_ssl_status */
 /**VIEW
 */
 public class SessionSslStatus{

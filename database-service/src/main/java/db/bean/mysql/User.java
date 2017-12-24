@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT Host AS host, User AS user, Select_priv AS selectPriv, Insert_priv AS insertPriv, Update_priv AS updatePriv, Delete_priv AS deletePriv, Create_priv AS createPriv, Drop_priv AS dropPriv, Reload_priv AS reloadPriv, Shutdown_priv AS shutdownPriv, Process_priv AS processPriv, File_priv AS filePriv, Grant_priv AS grantPriv, References_priv AS referencesPriv, Index_priv AS indexPriv, Alter_priv AS alterPriv, Show_db_priv AS showDbPriv, Super_priv AS superPriv, Create_tmp_table_priv AS createTmpTablePriv, Lock_tables_priv AS lockTablesPriv, Execute_priv AS executePriv, Repl_slave_priv AS replSlavePriv, Repl_client_priv AS replClientPriv, Create_view_priv AS createViewPriv, Show_view_priv AS showViewPriv, Create_routine_priv AS createRoutinePriv, Alter_routine_priv AS alterRoutinePriv, Create_user_priv AS createUserPriv, Event_priv AS eventPriv, Trigger_priv AS triggerPriv, Create_tablespace_priv AS createTablespacePriv, ssl_type AS sslType, ssl_cipher AS sslCipher, x509_issuer AS x509Issuer, x509_subject AS x509Subject, max_questions AS maxQuestions, max_updates AS maxUpdates, max_connections AS maxConnections, max_user_connections AS maxUserConnections, plugin AS plugin, authentication_string AS authenticationString, password_expired AS passwordExpired, password_last_changed AS passwordLastChanged, password_lifetime AS passwordLifetime, account_locked AS accountLocked FROM mysql.user */
 /**Users and global privileges
 */
 public class User{

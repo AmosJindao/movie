@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT event_time AS eventTime, user_host AS userHost, thread_id AS threadId, server_id AS serverId, command_type AS commandType, argument AS argument FROM mysql.general_log */
 /**General log
 */
 public class GeneralLog{

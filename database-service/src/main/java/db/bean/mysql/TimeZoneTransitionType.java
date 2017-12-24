@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Time_zone_id AS timeZoneId, Transition_type_id AS transitionTypeId, Offset AS offset, Is_DST AS isDst, Abbreviation AS abbreviation FROM mysql.time_zone_transition_type */
 /**Time zone transition types
 */
 public class TimeZoneTransitionType{

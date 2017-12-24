@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT help_topic_id AS helpTopicId, name AS name, help_category_id AS helpCategoryId, description AS description, example AS example, url AS url FROM mysql.help_topic */
 /**help topics
 */
 public class HelpTopic{

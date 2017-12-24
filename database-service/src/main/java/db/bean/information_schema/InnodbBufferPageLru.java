@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT POOL_ID AS poolId, LRU_POSITION AS lruPosition, SPACE AS space, PAGE_NUMBER AS pageNumber, PAGE_TYPE AS pageType, FLUSH_TYPE AS flushType, FIX_COUNT AS fixCount, IS_HASHED AS isHashed, NEWEST_MODIFICATION AS newestModification, OLDEST_MODIFICATION AS oldestModification, ACCESS_TIME AS accessTime, TABLE_NAME AS tableName, INDEX_NAME AS indexName, NUMBER_RECORDS AS numberRecords, DATA_SIZE AS dataSize, COMPRESSED_SIZE AS compressedSize, COMPRESSED AS compressed, IO_FIX AS ioFix, IS_OLD AS isOld, FREE_PAGE_CLOCK AS freePageClock FROM information_schema.INNODB_BUFFER_PAGE_LRU */
 /**
 */
 public class InnodbBufferPageLru{

@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT ID AS id, USER AS user, HOST AS host, DB AS db, COMMAND AS command, TIME AS time, STATE AS state, INFO AS info FROM information_schema.PROCESSLIST */
 /**
 */
 public class Processlist{

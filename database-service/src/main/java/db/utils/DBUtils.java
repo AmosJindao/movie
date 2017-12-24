@@ -1,12 +1,10 @@
 package db.utils;
 
-import db.bean.DBUser;
+import db.viewbean.DBUser;
 import db.exception.SystemException;
-import org.movie.commons.utils.ClassUtils;
-import org.yaml.snakeyaml.Yaml;
+import org.movie.commons.utils.YamlUtils;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * @author amos
@@ -19,10 +17,8 @@ public final class DBUtils{
     private final static String DB_CONFIG_YAML = "db.yaml";
 
     public static DBUser getDBUser() {
-        ClassLoader cl = ClassUtils.getDefaultClassLoader();
-
-        try (InputStream inputStream = cl.getResourceAsStream(DB_CONFIG_YAML)) {
-            return new Yaml().loadAs(inputStream, DBUser.class);
+          try  {
+            return YamlUtils.readClass(DB_CONFIG_YAML,DBUser.class);
         } catch (IOException e) {
             throw new SystemException(e);
         }

@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT PROCESSLIST_ID AS processlistId, ATTR_NAME AS attrName, ATTR_VALUE AS attrValue, ORDINAL_POSITION AS ordinalPosition FROM performance_schema.session_connect_attrs */
 /**
 */
 public class SessionConnectAttrs{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT object_schema AS objectSchema, object_name AS objectName, allocated AS allocated, data AS data, pages AS pages, pages_hashed AS pagesHashed, pages_old AS pagesOld, rows_cached AS rowsCached FROM sys.x$innodb_buffer_stats_by_table */
 /**VIEW
 */
 public class X$innodbBufferStatsByTable{

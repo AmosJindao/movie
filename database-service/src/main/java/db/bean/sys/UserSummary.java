@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT user AS user, statements AS statements, statement_latency AS statementLatency, statement_avg_latency AS statementAvgLatency, table_scans AS tableScans, file_ios AS fileIos, file_io_latency AS fileIoLatency, current_connections AS currentConnections, total_connections AS totalConnections, unique_hosts AS uniqueHosts, current_memory AS currentMemory, total_memory_allocated AS totalMemoryAllocated FROM sys.user_summary */
 /**VIEW
 */
 public class UserSummary{

@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT VARIABLE_NAME AS variableName, VARIABLE_VALUE AS variableValue FROM information_schema.GLOBAL_STATUS */
 /**
 */
 public class GlobalStatus{

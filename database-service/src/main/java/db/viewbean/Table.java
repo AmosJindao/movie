@@ -1,41 +1,53 @@
-package db.bean;
+package db.viewbean;
 
 import java.util.Date;
 
 /**
  * @author amos
- * @date 2017-09-24
+ * @date 2017-09-23
  */
 public class Table{
-    private String tableCatalog; //TABLE_CATALOG   | varchar(512)        | NO   |     |         |       |
-    private String tableSchema;// TABLE_SCHEMA  | varchar(64)         | NO   |     |         |       |
-    private String tableName;// TABLE_NAME      | varchar(64)         | NO   |     |         |       |
-    private String tableType;//  TABLE_TYPE      | varchar(64)         | NO   |     |         |       |
-    private String engine; //ENGINE          | varchar(64)         | YES  |     | NULL    |       |
-    private Long version;//VERSION         | bigint(21) unsigned | YES  |     | NULL    |       |
-    private String rowFormat;// ROW_FORMAT      | varchar(10)         | YES  |     | NULL    |       |
-    private Long tableRows;//TABLE_ROWS      | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long avgRowLength;//AVG_ROW_LENGTH  | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long dataLength;// DATA_LENGTH     | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long maxDataLength;//MAX_DATA_LENGTH | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long indexLength;//INDEX_LENGTH    | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long dataFree;// DATA_FREE       | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long autoIncrement;//AUTO_INCREMENT  | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Date createTime;//CREATE_TIME     | datetime            | YES  |     | NULL    |       |
-    private Date updateTime;//UPDATE_TIME     | datetime            | YES  |     | NULL    |       |
-    private Date checkTime;//CHECK_TIME      | datetime            | YES  |     | NULL    |       |
-    private String tableCollation;// TABLE_COLLATION | varchar(32)         | YES  |     | NULL    |       |
-    private Long checksum;//CHECKSUM        | bigint(21) unsigned | YES  |     | NULL    |       |
-    private String createOptions;// CREATE_OPTIONS  | varchar(255)        | YES  |     | NULL    |       |
-    private String tableComment;// TABLE_COMMENT   | varchar(2048)       | NO   |     |         |
+    private String tableCatalog;
 
-    public String getTableName() {
-        return tableName;
-    }
+    private String tableSchema;
 
-    public void setTableName(String tableName) {
-        this.tableName = tableName;
-    }
+    private String tableName;
+
+    private String tableType;
+
+    private String engine;
+
+    private Long version;
+
+    private String rowFormat;
+
+    private Long tableRows;
+
+    private Long avgRowLength;
+
+    private Long dataLength;
+
+    private Long maxDataLength;
+
+    private Long indexLength;
+
+    private Long dataFree;
+
+    private Long autoIncrement;
+
+    private Date createTime;
+
+    private Date updateTime;
+
+    private Date checkTime;
+
+    private String tableCollation;
+
+    private Long checksum;
+
+    private String createOptions;
+
+    private String tableComment;
 
     public String getTableCatalog() {
         return tableCatalog;
@@ -51,6 +63,14 @@ public class Table{
 
     public void setTableSchema(String tableSchema) {
         this.tableSchema = tableSchema;
+    }
+
+    public String getTableName() {
+        return tableName;
+    }
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
     }
 
     public String getTableType() {
@@ -199,6 +219,13 @@ public class Table{
 
     @Override
     public String toString() {
-        return "Table{" + "tableCatalog='" + tableCatalog + '\'' + ", tableSchema='" + tableSchema + '\'' + ", tableName='" + tableName + '\'' + ", tableType='" + tableType + '\'' + ", engine='" + engine + '\'' + ", version=" + version + ", rowFormat='" + rowFormat + '\'' + ", tableRows=" + tableRows + ", avgRowLength=" + avgRowLength + ", dataLength=" + dataLength + ", maxDataLength=" + maxDataLength + ", indexLength=" + indexLength + ", dataFree=" + dataFree + ", autoIncrement=" + autoIncrement + ", createTime=" + createTime + ", updateTime=" + updateTime + ", checkTime=" + checkTime + ", tableCollation='" + tableCollation + '\'' + ", checksum=" + checksum + ", createOptions='" + createOptions + '\'' + ", tableComment='" + tableComment + '\'' + '}';
+        return "Table{" + "tableCatalog='" + tableCatalog + '\'' + ", tableSchema='" + tableSchema + '\'' + ", " +
+                "tableName='" + tableName + '\'' + ", tableType='" + tableType + '\'' + ", engine='" + engine + '\''
+                + ", version=" + version + ", rowFormat='" + rowFormat + '\'' + ", tableRows=" + tableRows + ", " +
+                "avgRowLength=" + avgRowLength + ", dataLength=" + dataLength + ", maxDataLength=" + maxDataLength +
+                ", indexLength=" + indexLength + ", dataFree=" + dataFree + ", autoIncrement=" + autoIncrement + ", " +
+                "createTime=" + createTime + ", updateTime=" + updateTime + ", checkTime=" + checkTime + ", " +
+                "tableCollation='" + tableCollation + '\'' + ", checksum=" + checksum + ", createOptions='" +
+                createOptions + '\'' + ", tableComment='" + tableComment + '\'' + '}';
     }
 }

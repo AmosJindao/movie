@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT HOST AS host, VARIABLE_NAME AS variableName, VARIABLE_VALUE AS variableValue FROM performance_schema.status_by_host */
 /**
 */
 public class StatusByHost{

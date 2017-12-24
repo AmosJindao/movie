@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, redundant_index_name AS redundantIndexName, redundant_index_columns AS redundantIndexColumns, redundant_index_non_unique AS redundantIndexNonUnique, dominant_index_name AS dominantIndexName, dominant_index_columns AS dominantIndexColumns, dominant_index_non_unique AS dominantIndexNonUnique, subpart_exists AS subpartExists, sql_drop_index AS sqlDropIndex FROM sys.schema_redundant_indexes */
 /**VIEW
 */
 public class SchemaRedundantIndexes{

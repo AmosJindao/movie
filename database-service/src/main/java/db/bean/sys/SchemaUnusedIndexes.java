@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT object_schema AS objectSchema, object_name AS objectName, index_name AS indexName FROM sys.schema_unused_indexes */
 /**VIEW
 */
 public class SchemaUnusedIndexes{

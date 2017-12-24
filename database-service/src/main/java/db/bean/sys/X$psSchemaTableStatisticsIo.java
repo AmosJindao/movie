@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, count_read AS countRead, sum_number_of_bytes_read AS sumNumberOfBytesRead, sum_timer_read AS sumTimerRead, count_write AS countWrite, sum_number_of_bytes_write AS sumNumberOfBytesWrite, sum_timer_write AS sumTimerWrite, count_misc AS countMisc, sum_timer_misc AS sumTimerMisc FROM sys.x$ps_schema_table_statistics_io */
 /**VIEW
 */
 public class X$psSchemaTableStatisticsIo{

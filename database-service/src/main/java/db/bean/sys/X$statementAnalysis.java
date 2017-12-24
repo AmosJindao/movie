@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, full_scan AS fullScan, exec_count AS execCount, err_count AS errCount, warn_count AS warnCount, total_latency AS totalLatency, max_latency AS maxLatency, avg_latency AS avgLatency, lock_latency AS lockLatency, rows_sent AS rowsSent, rows_sent_avg AS rowsSentAvg, rows_examined AS rowsExamined, rows_examined_avg AS rowsExaminedAvg, rows_affected AS rowsAffected, rows_affected_avg AS rowsAffectedAvg, tmp_tables AS tmpTables, tmp_disk_tables AS tmpDiskTables, rows_sorted AS rowsSorted, sort_merge_passes AS sortMergePasses, digest AS digest, first_seen AS firstSeen, last_seen AS lastSeen FROM sys.x$statement_analysis */
 /**VIEW
 */
 public class X$statementAnalysis{

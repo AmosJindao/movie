@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT thread AS thread, file AS file, latency AS latency, operation AS operation, requested AS requested FROM sys.x$latest_file_io */
 /**VIEW
 */
 public class X$latestFileIo{

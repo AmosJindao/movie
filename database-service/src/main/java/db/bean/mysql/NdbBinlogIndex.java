@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Position AS position, File AS file, epoch AS epoch, inserts AS inserts, updates AS updates, deletes AS deletes, schemaops AS schemaops, orig_server_id AS origServerId, orig_epoch AS origEpoch, gci AS gci, next_position AS nextPosition, next_file AS nextFile FROM mysql.ndb_binlog_index */
 /**
 */
 public class NdbBinlogIndex{

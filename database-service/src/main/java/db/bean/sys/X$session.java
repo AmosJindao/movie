@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT thd_id AS thdId, conn_id AS connId, user AS user, db AS db, command AS command, state AS state, time AS time, current_statement AS currentStatement, statement_latency AS statementLatency, progress AS progress, lock_latency AS lockLatency, rows_examined AS rowsExamined, rows_sent AS rowsSent, rows_affected AS rowsAffected, tmp_tables AS tmpTables, tmp_disk_tables AS tmpDiskTables, full_scan AS fullScan, last_statement AS lastStatement, last_statement_latency AS lastStatementLatency, current_memory AS currentMemory, last_wait AS lastWait, last_wait_latency AS lastWaitLatency, source AS source, trx_latency AS trxLatency, trx_state AS trxState, trx_autocommit AS trxAutocommit, pid AS pid, program_name AS programName FROM sys.x$session */
 /**VIEW
 */
 public class X$session{

@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT USER AS user, HOST AS host, EVENT_NAME AS eventName, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait, SUM_LOCK_TIME AS sumLockTime, SUM_ERRORS AS sumErrors, SUM_WARNINGS AS sumWarnings, SUM_ROWS_AFFECTED AS sumRowsAffected, SUM_ROWS_SENT AS sumRowsSent, SUM_ROWS_EXAMINED AS sumRowsExamined, SUM_CREATED_TMP_DISK_TABLES AS sumCreatedTmpDiskTables, SUM_CREATED_TMP_TABLES AS sumCreatedTmpTables, SUM_SELECT_FULL_JOIN AS sumSelectFullJoin, SUM_SELECT_FULL_RANGE_JOIN AS sumSelectFullRangeJoin, SUM_SELECT_RANGE AS sumSelectRange, SUM_SELECT_RANGE_CHECK AS sumSelectRangeCheck, SUM_SELECT_SCAN AS sumSelectScan, SUM_SORT_MERGE_PASSES AS sumSortMergePasses, SUM_SORT_RANGE AS sumSortRange, SUM_SORT_ROWS AS sumSortRows, SUM_SORT_SCAN AS sumSortScan, SUM_NO_INDEX_USED AS sumNoIndexUsed, SUM_NO_GOOD_INDEX_USED AS sumNoGoodIndexUsed FROM performance_schema.events_statements_summary_by_account_by_event_name */
 /**
 */
 public class EventsStatementsSummaryByAccountByEventName{

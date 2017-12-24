@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT help_keyword_id AS helpKeywordId, name AS name FROM mysql.help_keyword */
 /**help keywords
 */
 public class HelpKeyword{

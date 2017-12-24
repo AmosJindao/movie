@@ -1,6 +1,6 @@
 package db.dao;
 
-import db.bean.DBUser;
+import db.viewbean.DBUser;
 import db.exception.SystemException;
 import db.utils.DBUtils;
 
@@ -10,10 +10,10 @@ import java.sql.SQLException;
 
 /**
  * @author amos
- * @date 2017-09-24
+ * @date 2017-09-25
  */
-public final class DBConnectionFactory{
-    private DBConnectionFactory(){}
+public final class DBConnFactory{
+    private DBConnFactory(){}
 
     public final static Connection getMysqlConnection(String url, String userName, String password)  {
         try {

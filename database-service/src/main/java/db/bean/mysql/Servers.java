@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Server_name AS serverName, Host AS host, Db AS db, Username AS username, Password AS password, Port AS port, Socket AS socket, Wrapper AS wrapper, Owner AS owner FROM mysql.servers */
 /**MySQL Foreign Servers table
 */
 public class Servers{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT event_name AS eventName, current_count AS currentCount, current_alloc AS currentAlloc, current_avg_alloc AS currentAvgAlloc, high_count AS highCount, high_alloc AS highAlloc, high_avg_alloc AS highAvgAlloc FROM sys.x$memory_global_by_current_bytes */
 /**VIEW
 */
 public class X$memoryGlobalByCurrentBytes{

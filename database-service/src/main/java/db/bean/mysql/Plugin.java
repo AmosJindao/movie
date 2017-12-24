@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT name AS name, dl AS dl FROM mysql.plugin */
 /**MySQL plugins
 */
 public class Plugin{

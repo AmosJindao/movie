@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT start_time AS startTime, user_host AS userHost, query_time AS queryTime, lock_time AS lockTime, rows_sent AS rowsSent, rows_examined AS rowsExamined, db AS db, last_insert_id AS lastInsertId, insert_id AS insertId, server_id AS serverId, sql_text AS sqlText, thread_id AS threadId FROM mysql.slow_log */
 /**Slow log
 */
 public class SlowLog{

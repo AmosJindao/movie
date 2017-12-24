@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_NAME AS constraintName, UNIQUE_CONSTRAINT_CATALOG AS uniqueConstraintCatalog, UNIQUE_CONSTRAINT_SCHEMA AS uniqueConstraintSchema, UNIQUE_CONSTRAINT_NAME AS uniqueConstraintName, MATCH_OPTION AS matchOption, UPDATE_RULE AS updateRule, DELETE_RULE AS deleteRule, TABLE_NAME AS tableName, REFERENCED_TABLE_NAME AS referencedTableName FROM information_schema.REFERENTIAL_CONSTRAINTS */
 /**
 */
 public class ReferentialConstraints{

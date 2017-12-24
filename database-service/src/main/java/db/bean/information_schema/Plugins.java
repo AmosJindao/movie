@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT PLUGIN_NAME AS pluginName, PLUGIN_VERSION AS pluginVersion, PLUGIN_STATUS AS pluginStatus, PLUGIN_TYPE AS pluginType, PLUGIN_TYPE_VERSION AS pluginTypeVersion, PLUGIN_LIBRARY AS pluginLibrary, PLUGIN_LIBRARY_VERSION AS pluginLibraryVersion, PLUGIN_AUTHOR AS pluginAuthor, PLUGIN_DESCRIPTION AS pluginDescription, PLUGIN_LICENSE AS pluginLicense, LOAD_OPTION AS loadOption FROM information_schema.PLUGINS */
 /**
 */
 public class Plugins{

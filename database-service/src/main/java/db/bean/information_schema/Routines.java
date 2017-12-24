@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT SPECIFIC_NAME AS specificName, ROUTINE_CATALOG AS routineCatalog, ROUTINE_SCHEMA AS routineSchema, ROUTINE_NAME AS routineName, ROUTINE_TYPE AS routineType, DATA_TYPE AS dataType, CHARACTER_MAXIMUM_LENGTH AS characterMaximumLength, CHARACTER_OCTET_LENGTH AS characterOctetLength, NUMERIC_PRECISION AS numericPrecision, NUMERIC_SCALE AS numericScale, DATETIME_PRECISION AS datetimePrecision, CHARACTER_SET_NAME AS characterSetName, COLLATION_NAME AS collationName, DTD_IDENTIFIER AS dtdIdentifier, ROUTINE_BODY AS routineBody, ROUTINE_DEFINITION AS routineDefinition, EXTERNAL_NAME AS externalName, EXTERNAL_LANGUAGE AS externalLanguage, PARAMETER_STYLE AS parameterStyle, IS_DETERMINISTIC AS isDeterministic, SQL_DATA_ACCESS AS sqlDataAccess, SQL_PATH AS sqlPath, SECURITY_TYPE AS securityType, CREATED AS created, LAST_ALTERED AS lastAltered, SQL_MODE AS sqlMode, ROUTINE_COMMENT AS routineComment, DEFINER AS definer, CHARACTER_SET_CLIENT AS characterSetClient, COLLATION_CONNECTION AS collationConnection, DATABASE_COLLATION AS databaseCollation FROM information_schema.ROUTINES */
 /**
 */
 public class Routines{

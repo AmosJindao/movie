@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Id AS id, Relay_log_name AS relayLogName, Relay_log_pos AS relayLogPos, Master_log_name AS masterLogName, Master_log_pos AS masterLogPos, Checkpoint_relay_log_name AS checkpointRelayLogName, Checkpoint_relay_log_pos AS checkpointRelayLogPos, Checkpoint_master_log_name AS checkpointMasterLogName, Checkpoint_master_log_pos AS checkpointMasterLogPos, Checkpoint_seqno AS checkpointSeqno, Checkpoint_group_size AS checkpointGroupSize, Checkpoint_group_bitmap AS checkpointGroupBitmap, Channel_name AS channelName FROM mysql.slave_worker_info */
 /**Worker Information
 */
 public class SlaveWorkerInfo{

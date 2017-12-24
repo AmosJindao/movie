@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT INDEX_ID AS indexId, NAME AS name, TABLE_ID AS tableId, TYPE AS type, N_FIELDS AS nFields, PAGE_NO AS pageNo, SPACE AS space, MERGE_THRESHOLD AS mergeThreshold FROM information_schema.INNODB_SYS_INDEXES */
 /**
 */
 public class InnodbSysIndexes{

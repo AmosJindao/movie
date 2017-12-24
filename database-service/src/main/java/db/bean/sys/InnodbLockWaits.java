@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT wait_started AS waitStarted, wait_age AS waitAge, wait_age_secs AS waitAgeSecs, locked_table AS lockedTable, locked_index AS lockedIndex, locked_type AS lockedType, waiting_trx_id AS waitingTrxId, waiting_trx_started AS waitingTrxStarted, waiting_trx_age AS waitingTrxAge, waiting_trx_rows_locked AS waitingTrxRowsLocked, waiting_trx_rows_modified AS waitingTrxRowsModified, waiting_pid AS waitingPid, waiting_query AS waitingQuery, waiting_lock_id AS waitingLockId, waiting_lock_mode AS waitingLockMode, blocking_trx_id AS blockingTrxId, blocking_pid AS blockingPid, blocking_query AS blockingQuery, blocking_lock_id AS blockingLockId, blocking_lock_mode AS blockingLockMode, blocking_trx_started AS blockingTrxStarted, blocking_trx_age AS blockingTrxAge, blocking_trx_rows_locked AS blockingTrxRowsLocked, blocking_trx_rows_modified AS blockingTrxRowsModified, sql_kill_blocking_query AS sqlKillBlockingQuery, sql_kill_blocking_connection AS sqlKillBlockingConnection FROM sys.innodb_lock_waits */
 /**VIEW
 */
 public class InnodbLockWaits{

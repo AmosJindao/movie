@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Number_of_lines AS numberOfLines, Master_log_name AS masterLogName, Master_log_pos AS masterLogPos, Host AS host, User_name AS userName, User_password AS userPassword, Port AS port, Connect_retry AS connectRetry, Enabled_ssl AS enabledSsl, Ssl_ca AS sslCa, Ssl_capath AS sslCapath, Ssl_cert AS sslCert, Ssl_cipher AS sslCipher, Ssl_key AS sslKey, Ssl_verify_server_cert AS sslVerifyServerCert, Heartbeat AS heartbeat, Bind AS bind, Ignored_server_ids AS ignoredServerIds, Uuid AS uuid, Retry_count AS retryCount, Ssl_crl AS sslCrl, Ssl_crlpath AS sslCrlpath, Enabled_auto_position AS enabledAutoPosition, Channel_name AS channelName, Tls_version AS tlsVersion FROM mysql.slave_master_info */
 /**Master Information
 */
 public class SlaveMasterInfo{

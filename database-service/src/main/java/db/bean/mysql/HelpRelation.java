@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT help_topic_id AS helpTopicId, help_keyword_id AS helpKeywordId FROM mysql.help_relation */
 /**keyword-topic relation
 */
 public class HelpRelation{

@@ -1,13 +1,10 @@
 package db.utils;
 
-import db.bean.Column;
-import db.bean.Schema;
-import db.bean.Table;
-import db.dao.DBConnectionFactory;
+import db.viewbean.Column;
+import db.viewbean.Table;
+import db.dao.DBConnFactory;
 import db.exception.SystemException;
-import sun.plugin.liveconnect.SecurityContextHelper;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,7 +25,7 @@ public class MysqlTableToBeanUtils{
     private static String projectPath = "/opt/amos/java/intellijapps/movie/database-service";
 
     public static void main(String[] args) {
-        try (Connection conn = DBConnectionFactory.getMysqlConnection(DBUtils.getDBUser())) {
+        try (Connection conn = DBConnFactory.getMysqlConnection(DBUtils.getDBUser())) {
             Map<String, List<Column>> tableColumsMap = getColumns(conn).stream().collect(Collectors.groupingBy(column -> getKey(column.getTableSchema(), column.getTableName())));
 
             getSchemas(conn).forEach(schema -> {
@@ -41,10 +38,12 @@ public class MysqlTableToBeanUtils{
                     if (columns == null || columns.size() == 0) {
                         System.out.println(table);
                     } else {
-                        StringBuilder sb = new StringBuilder();
+                        StringBuilder fieldSb = new StringBuilder();
+                        StringBuilder getMethodSb = new StringBuilder();
+                        StringBuilder selectSqlSb = new StringBuilder("SELECT ");
 
-                        sb.append("/**").append(table.getTableComment()).append("\n*/\n");
-                        sb.append("public class ").append(getCapitalLetterName(table.getTableName())).append("{\n");
+                        fieldSb.append("/**").append(table.getTableComment()).append("\n*/\n");
+                        fieldSb.append("public class ").append(getCapitalLetterName(table.getTableName())).append("{\n");
 
                         //                        Map<String, String> origCamelMap = new HashMap<>();
                         Map<String, String> dbTypeToJaveTypeMap = getDBTypeToJaveType();
@@ -53,7 +52,6 @@ public class MysqlTableToBeanUtils{
 
                         List<Column> sortedColumns= columns.stream().sorted(Comparator.comparing(column -> column.getOrdinalPosition()))
                                 .collect(Collectors.toList());
-
 
                         for (Column column : sortedColumns) {
                             String javaType = dbTypeToJaveTypeMap.get(column.getDataType());
@@ -66,25 +64,38 @@ public class MysqlTableToBeanUtils{
                                 if (!hasSet && javaType.startsWith("Set")) {
                                     hasSet = true;
                                 }
-                                sb.append("/**").append(column).append("*/\n");
-                                sb.append("private ").append(javaType).append(" ").append(getCamelName(column.getColumnName())).append(";\n");
-                                sb.append("\n");
+
+                                String camelName = getCamelName(column.getColumnName());
+
+                                fieldSb.append("/**").append(column).append("*/\n");
+                                fieldSb.append("private ").append(javaType).append(" ").append(camelName).append(";\n");
+                                fieldSb.append("\n");
+
+                                getMethodSb.append("public ").append(javaType).append(" get").append(getCapitalLetterName(column.getColumnName())).append("(){\n");
+                                getMethodSb.append("return ").append(camelName).append(";\n");
+                                getMethodSb.append("}\n");
+                                getMethodSb.append("\n");
+
+                                selectSqlSb.append(column.getColumnName()).append(" AS ").append(camelName).append(", ");
                             }
                         }
 
-                        sortedColumns.forEach(column -> {
-                            String javaType = dbTypeToJaveTypeMap.get(column.getDataType());
-                            if (javaType == null) {
-                                System.out.println("no javaType2:" + column);
-                            } else {
-                                sb.append("public ").append(javaType).append(" get").append(getCapitalLetterName(column.getColumnName())).append("(){\n");
-                                sb.append("return ").append(getCamelName(column.getColumnName())).append(";\n");
-                                sb.append("}\n");
-                                sb.append("\n");
-                            }
-                        });
+                        selectSqlSb.delete(selectSqlSb.length() - 2, selectSqlSb.length());
 
-                        sb.append("}");
+                        selectSqlSb.append(" FROM ").append(table.getTableSchema()).append(".").append(table.getTableName());
+
+//                        sortedColumns.forEach(column -> {
+//                            String javaType = dbTypeToJaveTypeMap.get(column.getDataType());
+//                            if (javaType == null) {
+//                                System.out.println("no javaType2:" + column);
+//                            } else {
+//
+//                            }
+//                        });
+
+                        fieldSb.append(getMethodSb.toString());
+
+                        fieldSb.append("}");
 
                         StringBuilder sb2 = new StringBuilder();
 
@@ -99,7 +110,9 @@ public class MysqlTableToBeanUtils{
 
                         sb2.append("\n");
 
-                        sb2.append(sb.toString());
+                        sb2.append("/* ").append(selectSqlSb.toString()).append(" */\n");
+
+                        sb2.append(fieldSb.toString());
 
                         writeToFile(projectPath + "/src/main/java/db/bean/" + table.getTableSchema().toLowerCase(), getCapitalLetterName(table.getTableName()) + ".java", sb2.toString());
 

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT CHANNEL_NAME AS channelName, THREAD_ID AS threadId, SERVICE_STATE AS serviceState, LAST_ERROR_NUMBER AS lastErrorNumber, LAST_ERROR_MESSAGE AS lastErrorMessage, LAST_ERROR_TIMESTAMP AS lastErrorTimestamp FROM performance_schema.replication_applier_status_by_coordinator */
 /**
 */
 public class ReplicationApplierStatusByCoordinator{

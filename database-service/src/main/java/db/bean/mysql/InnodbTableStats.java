@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT database_name AS databaseName, table_name AS tableName, last_update AS lastUpdate, n_rows AS nRows, clustered_index_size AS clusteredIndexSize, sum_of_other_index_sizes AS sumOfOtherIndexSizes FROM mysql.innodb_table_stats */
 /**
 */
 public class InnodbTableStats{

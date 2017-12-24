@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT ID AS id, FOR_COL_NAME AS forColName, REF_COL_NAME AS refColName, POS AS pos FROM information_schema.INNODB_SYS_FOREIGN_COLS */
 /**
 */
 public class InnodbSysForeignCols{

@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT requesting_trx_id AS requestingTrxId, requested_lock_id AS requestedLockId, blocking_trx_id AS blockingTrxId, blocking_lock_id AS blockingLockId FROM information_schema.INNODB_LOCK_WAITS */
 /**
 */
 public class InnodbLockWaits{

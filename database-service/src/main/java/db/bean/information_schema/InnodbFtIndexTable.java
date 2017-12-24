@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT WORD AS word, FIRST_DOC_ID AS firstDocId, LAST_DOC_ID AS lastDocId, DOC_COUNT AS docCount, DOC_ID AS docId, POSITION AS position FROM information_schema.INNODB_FT_INDEX_TABLE */
 /**
 */
 public class InnodbFtIndexTable{

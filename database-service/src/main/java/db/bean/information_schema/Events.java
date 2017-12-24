@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT EVENT_CATALOG AS eventCatalog, EVENT_SCHEMA AS eventSchema, EVENT_NAME AS eventName, DEFINER AS definer, TIME_ZONE AS timeZone, EVENT_BODY AS eventBody, EVENT_DEFINITION AS eventDefinition, EVENT_TYPE AS eventType, EXECUTE_AT AS executeAt, INTERVAL_VALUE AS intervalValue, INTERVAL_FIELD AS intervalField, SQL_MODE AS sqlMode, STARTS AS starts, ENDS AS ends, STATUS AS status, ON_COMPLETION AS onCompletion, CREATED AS created, LAST_ALTERED AS lastAltered, LAST_EXECUTED AS lastExecuted, EVENT_COMMENT AS eventComment, ORIGINATOR AS originator, CHARACTER_SET_CLIENT AS characterSetClient, COLLATION_CONNECTION AS collationConnection, DATABASE_COLLATION AS databaseCollation FROM information_schema.EVENTS */
 /**
 */
 public class Events{

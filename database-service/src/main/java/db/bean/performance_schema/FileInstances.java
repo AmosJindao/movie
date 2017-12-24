@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT FILE_NAME AS fileName, EVENT_NAME AS eventName, OPEN_COUNT AS openCount FROM performance_schema.file_instances */
 /**
 */
 public class FileInstances{

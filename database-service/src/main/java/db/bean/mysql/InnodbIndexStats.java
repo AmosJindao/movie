@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT database_name AS databaseName, table_name AS tableName, index_name AS indexName, last_update AS lastUpdate, stat_name AS statName, stat_value AS statValue, sample_size AS sampleSize, stat_description AS statDescription FROM mysql.innodb_index_stats */
 /**
 */
 public class InnodbIndexStats{

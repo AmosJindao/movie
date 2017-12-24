@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT COLLATION_NAME AS collationName, CHARACTER_SET_NAME AS characterSetName, ID AS id, IS_DEFAULT AS isDefault, IS_COMPILED AS isCompiled, SORTLEN AS sortlen FROM information_schema.COLLATIONS */
 /**
 */
 public class Collations{

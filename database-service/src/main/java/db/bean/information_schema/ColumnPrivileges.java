@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT GRANTEE AS grantee, TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, COLUMN_NAME AS columnName, PRIVILEGE_TYPE AS privilegeType, IS_GRANTABLE AS isGrantable FROM information_schema.COLUMN_PRIVILEGES */
 /**
 */
 public class ColumnPrivileges{

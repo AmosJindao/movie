@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT THREAD_ID AS threadId, EVENT_ID AS eventId, END_EVENT_ID AS endEventId, EVENT_NAME AS eventName, SOURCE AS source, TIMER_START AS timerStart, TIMER_END AS timerEnd, TIMER_WAIT AS timerWait, SPINS AS spins, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, INDEX_NAME AS indexName, OBJECT_TYPE AS objectType, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, NESTING_EVENT_ID AS nestingEventId, NESTING_EVENT_TYPE AS nestingEventType, OPERATION AS operation, NUMBER_OF_BYTES AS numberOfBytes, FLAGS AS flags FROM performance_schema.events_waits_history_long */
 /**
 */
 public class EventsWaitsHistoryLong{

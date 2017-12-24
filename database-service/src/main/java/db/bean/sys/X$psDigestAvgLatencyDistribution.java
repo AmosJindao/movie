@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT cnt AS cnt, avg_us AS avgUs FROM sys.x$ps_digest_avg_latency_distribution */
 /**VIEW
 */
 public class X$psDigestAvgLatencyDistribution{

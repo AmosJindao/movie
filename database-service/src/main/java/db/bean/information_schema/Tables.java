@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, TABLE_TYPE AS tableType, ENGINE AS engine, VERSION AS version, ROW_FORMAT AS rowFormat, TABLE_ROWS AS tableRows, AVG_ROW_LENGTH AS avgRowLength, DATA_LENGTH AS dataLength, MAX_DATA_LENGTH AS maxDataLength, INDEX_LENGTH AS indexLength, DATA_FREE AS dataFree, AUTO_INCREMENT AS autoIncrement, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime, CHECK_TIME AS checkTime, TABLE_COLLATION AS tableCollation, CHECKSUM AS checksum, CREATE_OPTIONS AS createOptions, TABLE_COMMENT AS tableComment FROM information_schema.TABLES */
 /**
 */
 public class Tables{

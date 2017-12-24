@@ -3,6 +3,7 @@ package db.bean.mysql;
 import java.util.Date;
 import java.util.Set;
 
+/* SELECT db AS db, name AS name, body AS body, definer AS definer, execute_at AS executeAt, interval_value AS intervalValue, interval_field AS intervalField, created AS created, modified AS modified, last_executed AS lastExecuted, starts AS starts, ends AS ends, status AS status, on_completion AS onCompletion, sql_mode AS sqlMode, comment AS comment, originator AS originator, time_zone AS timeZone, character_set_client AS characterSetClient, collation_connection AS collationConnection, db_collation AS dbCollation, body_utf8 AS bodyUtf8 FROM mysql.event */
 /**Events
 */
 public class Event{

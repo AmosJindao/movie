@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, exec_count AS execCount, errors AS errors, error_pct AS errorPct, warnings AS warnings, warning_pct AS warningPct, first_seen AS firstSeen, last_seen AS lastSeen, digest AS digest FROM sys.x$statements_with_errors_or_warnings */
 /**VIEW
 */
 public class X$statementsWithErrorsOrWarnings{

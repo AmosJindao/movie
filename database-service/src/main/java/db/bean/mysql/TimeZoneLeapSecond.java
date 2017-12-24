@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Transition_time AS transitionTime, Correction AS correction FROM mysql.time_zone_leap_second */
 /**Leap seconds information for time zones
 */
 public class TimeZoneLeapSecond{

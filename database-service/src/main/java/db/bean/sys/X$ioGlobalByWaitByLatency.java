@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT event_name AS eventName, total AS total, total_latency AS totalLatency, avg_latency AS avgLatency, max_latency AS maxLatency, read_latency AS readLatency, write_latency AS writeLatency, misc_latency AS miscLatency, count_read AS countRead, total_read AS totalRead, avg_read AS avgRead, count_write AS countWrite, total_written AS totalWritten, avg_written AS avgWritten FROM sys.x$io_global_by_wait_by_latency */
 /**VIEW
 */
 public class X$ioGlobalByWaitByLatency{

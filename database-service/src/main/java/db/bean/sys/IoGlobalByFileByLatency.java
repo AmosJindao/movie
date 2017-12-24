@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT file AS file, total AS total, total_latency AS totalLatency, count_read AS countRead, read_latency AS readLatency, count_write AS countWrite, write_latency AS writeLatency, count_misc AS countMisc, misc_latency AS miscLatency FROM sys.io_global_by_file_by_latency */
 /**VIEW
 */
 public class IoGlobalByFileByLatency{

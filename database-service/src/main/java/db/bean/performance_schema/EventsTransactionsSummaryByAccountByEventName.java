@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT USER AS user, HOST AS host, EVENT_NAME AS eventName, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait, COUNT_READ_WRITE AS countReadWrite, SUM_TIMER_READ_WRITE AS sumTimerReadWrite, MIN_TIMER_READ_WRITE AS minTimerReadWrite, AVG_TIMER_READ_WRITE AS avgTimerReadWrite, MAX_TIMER_READ_WRITE AS maxTimerReadWrite, COUNT_READ_ONLY AS countReadOnly, SUM_TIMER_READ_ONLY AS sumTimerReadOnly, MIN_TIMER_READ_ONLY AS minTimerReadOnly, AVG_TIMER_READ_ONLY AS avgTimerReadOnly, MAX_TIMER_READ_ONLY AS maxTimerReadOnly FROM performance_schema.events_transactions_summary_by_account_by_event_name */
 /**
 */
 public class EventsTransactionsSummaryByAccountByEventName{

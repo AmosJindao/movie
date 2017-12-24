@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT NAME AS name, TIMER_NAME AS timerName FROM performance_schema.setup_timers */
 /**
 */
 public class SetupTimers{

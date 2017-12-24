@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;
@@ -36,7 +37,6 @@ public final class CommonUtils{
     /**
      * 给TOP请求签名。
      *
-     * @param requestHolder 所有字符型的TOP请求参数
      * @param secret        签名密钥
      * @param isHmac        是否为HMAC方式加密
      * @return 签名
@@ -233,6 +233,10 @@ public final class CommonUtils{
             localIp = "127.0.0.1";
         }
         return localIp;
+    }
+
+    public static  boolean isEmail(String emailAddress){
+        return Pattern.compile(".*@.*\\..*").matcher(emailAddress).matches();
     }
 
 }

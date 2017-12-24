@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT ENGINE AS engine, SUPPORT AS support, COMMENT AS comment, TRANSACTIONS AS transactions, XA AS xa, SAVEPOINTS AS savepoints FROM information_schema.ENGINES */
 /**
 */
 public class Engines{

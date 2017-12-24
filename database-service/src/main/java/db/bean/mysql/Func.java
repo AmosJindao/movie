@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT name AS name, ret AS ret, dl AS dl, type AS type FROM mysql.func */
 /**User defined functions
 */
 public class Func{

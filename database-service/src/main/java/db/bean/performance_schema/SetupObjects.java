@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, ENABLED AS enabled, TIMED AS timed FROM performance_schema.setup_objects */
 /**
 */
 public class SetupObjects{

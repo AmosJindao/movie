@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_ID AS tableId, POS AS pos, BASE_POS AS basePos FROM information_schema.INNODB_SYS_VIRTUAL */
 /**
 */
 public class InnodbSysVirtual{

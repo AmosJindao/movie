@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT VARIABLE_NAME AS variableName, VARIABLE_VALUE AS variableValue FROM performance_schema.global_status */
 /**
 */
 public class GlobalStatus{

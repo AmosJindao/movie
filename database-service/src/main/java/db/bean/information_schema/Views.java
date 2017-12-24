@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, VIEW_DEFINITION AS viewDefinition, CHECK_OPTION AS checkOption, IS_UPDATABLE AS isUpdatable, DEFINER AS definer, SECURITY_TYPE AS securityType, CHARACTER_SET_CLIENT AS characterSetClient, COLLATION_CONNECTION AS collationConnection FROM information_schema.VIEWS */
 /**
 */
 public class Views{

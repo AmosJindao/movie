@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT thread_id AS threadId, user AS user, current_count_used AS currentCountUsed, current_allocated AS currentAllocated, current_avg_alloc AS currentAvgAlloc, current_max_alloc AS currentMaxAlloc, total_allocated AS totalAllocated FROM sys.memory_by_thread_by_current_bytes */
 /**VIEW
 */
 public class MemoryByThreadByCurrentBytes{

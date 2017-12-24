@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_ID AS tableId, NAME AS name, N_COLS AS nCols, SPACE AS space, PER_TABLE_TABLESPACE AS perTableTablespace, IS_COMPRESSED AS isCompressed FROM information_schema.INNODB_TEMP_TABLE_INFO */
 /**
 */
 public class InnodbTempTableInfo{

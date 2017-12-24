@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_NAME AS constraintName, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, CONSTRAINT_TYPE AS constraintType FROM information_schema.TABLE_CONSTRAINTS */
 /**
 */
 public class TableConstraints{

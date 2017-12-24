@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT cost_name AS costName, cost_value AS costValue, last_update AS lastUpdate, comment AS comment FROM mysql.server_cost */
 /**
 */
 public class ServerCost{

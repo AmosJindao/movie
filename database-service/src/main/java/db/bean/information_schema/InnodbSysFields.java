@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT INDEX_ID AS indexId, NAME AS name, POS AS pos FROM information_schema.INNODB_SYS_FIELDS */
 /**
 */
 public class InnodbSysFields{

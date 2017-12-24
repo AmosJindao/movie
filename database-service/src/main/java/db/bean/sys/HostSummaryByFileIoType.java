@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, event_name AS eventName, total AS total, total_latency AS totalLatency, max_latency AS maxLatency FROM sys.host_summary_by_file_io_type */
 /**VIEW
 */
 public class HostSummaryByFileIoType{

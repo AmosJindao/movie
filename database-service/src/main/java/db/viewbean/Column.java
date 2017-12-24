@@ -1,31 +1,51 @@
-package db.bean;
+package db.viewbean;
 
 /**
  * @author amos
  * @date 2017-09-29
  */
 public class Column{
-    private String tableCatalog; //TABLE_CATALOG            | varchar(512)        | NO   |     |         |       |
-    private String tableSchema;// TABLE_SCHEMA             | varchar(64)         | NO   |     |         |       |
-    private String tableName;// TABLE_NAME               | varchar(64)         | NO   |     |         |       |
-    private String columnName;// COLUMN_NAME              | varchar(64)         | NO   |     |         |       |
-    private Long ordinalPosition;//ORDINAL_POSITION         | bigint(21) unsigned | NO   |     | 0       |       |
-    private String columnDefault;//COLUMN_DEFAULT           | longtext            | YES  |     | NULL    |       |
-    private String isNullable;//IS_NULLABLE              | varchar(3)          | NO   |     |         |       |
-    private String dataType;//DATA_TYPE                | varchar(64)         | NO   |     |         |       |
-    private Long characterMaximumLength;//CHARACTER_MAXIMUM_LENGTH | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long characterOctetLength;//CHARACTER_OCTET_LENGTH   | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long numericPrecision;//NUMERIC_PRECISION        | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long numericScale;//NUMERIC_SCALE            | bigint(21) unsigned | YES  |     | NULL    |       |
-    private Long datetimePrecision;//DATETIME_PRECISION       | bigint(21) unsigned | YES  |     | NULL    |       |
-    private String characterSetName;//CHARACTER_SET_NAME       | varchar(32)         | YES  |     | NULL    |       |
-    private String collationName;//COLLATION_NAME           | varchar(32)         | YES  |     | NULL    |       |
-    private String columnType;//COLUMN_TYPE              | longtext            | NO   |     | NULL    |       |
-    private String columnKey;//COLUMN_KEY               | varchar(3)          | NO   |     |         |       |
-    private String extra;//EXTRA                    | varchar(30)         | NO   |     |         |       |
-    private String privileges;//PRIVILEGES               | varchar(80)         | NO   |     |         |       |
-    private String columnComment;//COLUMN_COMMENT           | varchar(1024)       | NO   |     |         |       |
-    private String generationExpression;//GENERATION_EXPRESSION    | longtext
+    private String tableCatalog;
+
+    private String tableSchema;
+
+    private String tableName;
+
+    private String columnName;
+
+    private Long ordinalPosition;
+
+    private String columnDefault;
+
+    private String isNullable;
+
+    private String dataType;
+
+    private Long characterMaximumLength;
+
+    private Long characterOctetLength;
+
+    private Long numericPrecision;
+
+    private Long numericScale;
+
+    private Long datetimePrecision;
+
+    private String characterSetName;
+
+    private String collationName;
+
+    private String columnType;
+
+    private String columnKey;
+
+    private String extra;
+
+    private String privileges;
+
+    private String columnComment;
+
+    private String generationExpression;
 
     public String getTableCatalog() {
         return tableCatalog;
@@ -197,6 +217,15 @@ public class Column{
 
     @Override
     public String toString() {
-        return "Column{" + "tableCatalog='" + tableCatalog + '\'' + ", tableSchema='" + tableSchema + '\'' + ", tableName='" + tableName + '\'' + ", columnName='" + columnName + '\'' + ", ordinalPosition=" + ordinalPosition + ", columnDefault='" + columnDefault + '\'' + ", isNullable='" + isNullable + '\'' + ", dataType='" + dataType + '\'' + ", characterMaximumLength=" + characterMaximumLength + ", characterOctetLength=" + characterOctetLength + ", numericPrecision=" + numericPrecision + ", numericScale=" + numericScale + ", datetimePrecision=" + datetimePrecision + ", characterSetName='" + characterSetName + '\'' + ", collationName='" + collationName + '\'' + ", columnType='" + columnType + '\'' + ", columnKey='" + columnKey + '\'' + ", extra='" + extra + '\'' + ", privileges='" + privileges + '\'' + ", columnComment='" + columnComment + '\'' + ", generationExpression='" + generationExpression + '\'' + '}';
+        return "Column{" + "tableCatalog='" + tableCatalog + '\'' + ", tableSchema='" + tableSchema + '\'' + ", " +
+                "tableName='" + tableName + '\'' + ", columnName='" + columnName + '\'' + ", ordinalPosition=" +
+                ordinalPosition + ", columnDefault='" + columnDefault + '\'' + ", isNullable='" + isNullable + '\'' +
+                ", dataType='" + dataType + '\'' + ", characterMaximumLength=" + characterMaximumLength + ", " +
+                "characterOctetLength=" + characterOctetLength + ", numericPrecision=" + numericPrecision + ", " +
+                "numericScale=" + numericScale + ", datetimePrecision=" + datetimePrecision + ", characterSetName='"
+                + characterSetName + '\'' + ", collationName='" + collationName + '\'' + ", columnType='" +
+                columnType + '\'' + ", columnKey='" + columnKey + '\'' + ", extra='" + extra + '\'' + ", " +
+                "privileges='" + privileges + '\'' + ", columnComment='" + columnComment + '\'' + ", " +
+                "generationExpression='" + generationExpression + '\'' + '}';
     }
 }

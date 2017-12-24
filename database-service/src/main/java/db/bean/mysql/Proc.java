@@ -3,6 +3,7 @@ package db.bean.mysql;
 import java.util.Date;
 import java.util.Set;
 
+/* SELECT db AS db, name AS name, type AS type, specific_name AS specificName, language AS language, sql_data_access AS sqlDataAccess, is_deterministic AS isDeterministic, security_type AS securityType, param_list AS paramList, returns AS returns, body AS body, definer AS definer, created AS created, modified AS modified, sql_mode AS sqlMode, comment AS comment, character_set_client AS characterSetClient, collation_connection AS collationConnection, db_collation AS dbCollation, body_utf8 AS bodyUtf8 FROM mysql.proc */
 /**Stored Procedures
 */
 public class Proc{

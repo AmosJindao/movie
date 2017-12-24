@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT EVENT_NAME AS eventName, COUNT_ALLOC AS countAlloc, COUNT_FREE AS countFree, SUM_NUMBER_OF_BYTES_ALLOC AS sumNumberOfBytesAlloc, SUM_NUMBER_OF_BYTES_FREE AS sumNumberOfBytesFree, LOW_COUNT_USED AS lowCountUsed, CURRENT_COUNT_USED AS currentCountUsed, HIGH_COUNT_USED AS highCountUsed, LOW_NUMBER_OF_BYTES_USED AS lowNumberOfBytesUsed, CURRENT_NUMBER_OF_BYTES_USED AS currentNumberOfBytesUsed, HIGH_NUMBER_OF_BYTES_USED AS highNumberOfBytesUsed FROM performance_schema.memory_summary_global_by_event_name */
 /**
 */
 public class MemorySummaryGlobalByEventName{

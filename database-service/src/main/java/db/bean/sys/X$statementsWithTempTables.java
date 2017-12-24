@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, exec_count AS execCount, total_latency AS totalLatency, memory_tmp_tables AS memoryTmpTables, disk_tmp_tables AS diskTmpTables, avg_tmp_tables_per_query AS avgTmpTablesPerQuery, tmp_tables_to_disk_pct AS tmpTablesToDiskPct, first_seen AS firstSeen, last_seen AS lastSeen, digest AS digest FROM sys.x$statements_with_temp_tables */
 /**VIEW
 */
 public class X$statementsWithTempTables{

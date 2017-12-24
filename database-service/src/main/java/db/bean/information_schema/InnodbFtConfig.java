@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT KEY AS key, VALUE AS value FROM information_schema.INNODB_FT_CONFIG */
 /**
 */
 public class InnodbFtConfig{

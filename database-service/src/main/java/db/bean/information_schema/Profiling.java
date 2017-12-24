@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT QUERY_ID AS queryId, SEQ AS seq, STATE AS state, DURATION AS duration, CPU_USER AS cpuUser, CPU_SYSTEM AS cpuSystem, CONTEXT_VOLUNTARY AS contextVoluntary, CONTEXT_INVOLUNTARY AS contextInvoluntary, BLOCK_OPS_IN AS blockOpsIn, BLOCK_OPS_OUT AS blockOpsOut, MESSAGES_SENT AS messagesSent, MESSAGES_RECEIVED AS messagesReceived, PAGE_FAULTS_MAJOR AS pageFaultsMajor, PAGE_FAULTS_MINOR AS pageFaultsMinor, SWAPS AS swaps, SOURCE_FUNCTION AS sourceFunction, SOURCE_FILE AS sourceFile, SOURCE_LINE AS sourceLine FROM information_schema.PROFILING */
 /**
 */
 public class Profiling{

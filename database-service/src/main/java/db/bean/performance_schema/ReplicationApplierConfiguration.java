@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT CHANNEL_NAME AS channelName, DESIRED_DELAY AS desiredDelay FROM performance_schema.replication_applier_configuration */
 /**
 */
 public class ReplicationApplierConfiguration{

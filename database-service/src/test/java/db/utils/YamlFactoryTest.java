@@ -1,6 +1,6 @@
 package db.utils;
 
-import db.bean.DBUser;
+import db.viewbean.DBUser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.movie.commons.utils.ClassUtils;

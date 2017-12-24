@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Number_of_lines AS numberOfLines, Relay_log_name AS relayLogName, Relay_log_pos AS relayLogPos, Master_log_name AS masterLogName, Master_log_pos AS masterLogPos, Sql_delay AS sqlDelay, Number_of_workers AS numberOfWorkers, Id AS id, Channel_name AS channelName FROM mysql.slave_relay_log_info */
 /**Relay Log Information
 */
 public class SlaveRelayLogInfo{

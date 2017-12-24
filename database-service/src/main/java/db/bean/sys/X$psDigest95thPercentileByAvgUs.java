@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT avg_us AS avgUs, percentile AS percentile FROM sys.x$ps_digest_95th_percentile_by_avg_us */
 /**VIEW
 */
 public class X$psDigest95thPercentileByAvgUs{

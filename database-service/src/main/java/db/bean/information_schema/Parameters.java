@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT SPECIFIC_CATALOG AS specificCatalog, SPECIFIC_SCHEMA AS specificSchema, SPECIFIC_NAME AS specificName, ORDINAL_POSITION AS ordinalPosition, PARAMETER_MODE AS parameterMode, PARAMETER_NAME AS parameterName, DATA_TYPE AS dataType, CHARACTER_MAXIMUM_LENGTH AS characterMaximumLength, CHARACTER_OCTET_LENGTH AS characterOctetLength, NUMERIC_PRECISION AS numericPrecision, NUMERIC_SCALE AS numericScale, DATETIME_PRECISION AS datetimePrecision, CHARACTER_SET_NAME AS characterSetName, COLLATION_NAME AS collationName, DTD_IDENTIFIER AS dtdIdentifier, ROUTINE_TYPE AS routineType FROM information_schema.PARAMETERS */
 /**
 */
 public class Parameters{

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT NAME AS name, ENABLED AS enabled, TIMED AS timed FROM performance_schema.setup_instruments */
 /**
 */
 public class SetupInstruments{

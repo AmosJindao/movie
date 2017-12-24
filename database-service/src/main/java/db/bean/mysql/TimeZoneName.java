@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Name AS name, Time_zone_id AS timeZoneId FROM mysql.time_zone_name */
 /**Time zone names
 */
 public class TimeZoneName{

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, STATEMENT_ID AS statementId, STATEMENT_NAME AS statementName, SQL_TEXT AS sqlText, OWNER_THREAD_ID AS ownerThreadId, OWNER_EVENT_ID AS ownerEventId, OWNER_OBJECT_TYPE AS ownerObjectType, OWNER_OBJECT_SCHEMA AS ownerObjectSchema, OWNER_OBJECT_NAME AS ownerObjectName, TIMER_PREPARE AS timerPrepare, COUNT_REPREPARE AS countReprepare, COUNT_EXECUTE AS countExecute, SUM_TIMER_EXECUTE AS sumTimerExecute, MIN_TIMER_EXECUTE AS minTimerExecute, AVG_TIMER_EXECUTE AS avgTimerExecute, MAX_TIMER_EXECUTE AS maxTimerExecute, SUM_LOCK_TIME AS sumLockTime, SUM_ERRORS AS sumErrors, SUM_WARNINGS AS sumWarnings, SUM_ROWS_AFFECTED AS sumRowsAffected, SUM_ROWS_SENT AS sumRowsSent, SUM_ROWS_EXAMINED AS sumRowsExamined, SUM_CREATED_TMP_DISK_TABLES AS sumCreatedTmpDiskTables, SUM_CREATED_TMP_TABLES AS sumCreatedTmpTables, SUM_SELECT_FULL_JOIN AS sumSelectFullJoin, SUM_SELECT_FULL_RANGE_JOIN AS sumSelectFullRangeJoin, SUM_SELECT_RANGE AS sumSelectRange, SUM_SELECT_RANGE_CHECK AS sumSelectRangeCheck, SUM_SELECT_SCAN AS sumSelectScan, SUM_SORT_MERGE_PASSES AS sumSortMergePasses, SUM_SORT_RANGE AS sumSortRange, SUM_SORT_ROWS AS sumSortRows, SUM_SORT_SCAN AS sumSortScan, SUM_NO_INDEX_USED AS sumNoIndexUsed, SUM_NO_GOOD_INDEX_USED AS sumNoGoodIndexUsed FROM performance_schema.prepared_statements_instances */
 /**
 */
 public class PreparedStatementsInstances{

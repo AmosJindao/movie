@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT Host AS host, User AS user, Proxied_host AS proxiedHost, Proxied_user AS proxiedUser, With_grant AS withGrant, Grantor AS grantor, Timestamp AS timestamp FROM mysql.proxies_priv */
 /**User proxy privileges
 */
 public class ProxiesPriv{

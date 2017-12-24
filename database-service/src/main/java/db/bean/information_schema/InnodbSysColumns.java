@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_ID AS tableId, NAME AS name, POS AS pos, MTYPE AS mtype, PRTYPE AS prtype, LEN AS len FROM information_schema.INNODB_SYS_COLUMNS */
 /**
 */
 public class InnodbSysColumns{

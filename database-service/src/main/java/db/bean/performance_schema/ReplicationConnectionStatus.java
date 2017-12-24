@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT CHANNEL_NAME AS channelName, GROUP_NAME AS groupName, SOURCE_UUID AS sourceUuid, THREAD_ID AS threadId, SERVICE_STATE AS serviceState, COUNT_RECEIVED_HEARTBEATS AS countReceivedHeartbeats, LAST_HEARTBEAT_TIMESTAMP AS lastHeartbeatTimestamp, RECEIVED_TRANSACTION_SET AS receivedTransactionSet, LAST_ERROR_NUMBER AS lastErrorNumber, LAST_ERROR_MESSAGE AS lastErrorMessage, LAST_ERROR_TIMESTAMP AS lastErrorTimestamp FROM performance_schema.replication_connection_status */
 /**
 */
 public class ReplicationConnectionStatus{

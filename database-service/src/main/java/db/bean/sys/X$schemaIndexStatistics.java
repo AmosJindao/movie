@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, index_name AS indexName, rows_selected AS rowsSelected, select_latency AS selectLatency, rows_inserted AS rowsInserted, insert_latency AS insertLatency, rows_updated AS rowsUpdated, update_latency AS updateLatency, rows_deleted AS rowsDeleted, delete_latency AS deleteLatency FROM sys.x$schema_index_statistics */
 /**VIEW
 */
 public class X$schemaIndexStatistics{

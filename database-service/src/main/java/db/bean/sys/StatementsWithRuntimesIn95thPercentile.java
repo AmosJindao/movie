@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, full_scan AS fullScan, exec_count AS execCount, err_count AS errCount, warn_count AS warnCount, total_latency AS totalLatency, max_latency AS maxLatency, avg_latency AS avgLatency, rows_sent AS rowsSent, rows_sent_avg AS rowsSentAvg, rows_examined AS rowsExamined, rows_examined_avg AS rowsExaminedAvg, first_seen AS firstSeen, last_seen AS lastSeen, digest AS digest FROM sys.statements_with_runtimes_in_95th_percentile */
 /**VIEW
 */
 public class StatementsWithRuntimesIn95thPercentile{

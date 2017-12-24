@@ -3,6 +3,7 @@ package db.bean.mysql;
 import java.util.Date;
 import java.util.Set;
 
+/* SELECT Host AS host, Db AS db, User AS user, Routine_name AS routineName, Routine_type AS routineType, Grantor AS grantor, Proc_priv AS procPriv, Timestamp AS timestamp FROM mysql.procs_priv */
 /**Procedure privileges
 */
 public class ProcsPriv{

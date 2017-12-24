@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, column_name AS columnName, data_type AS dataType, column_type AS columnType, is_signed AS isSigned, is_unsigned AS isUnsigned, max_value AS maxValue, auto_increment AS autoIncrement, auto_increment_ratio AS autoIncrementRatio FROM sys.schema_auto_increment_columns */
 /**VIEW
 */
 public class SchemaAutoIncrementColumns{

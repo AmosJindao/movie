@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT Time_zone_id AS timeZoneId, Use_leap_seconds AS useLeapSeconds FROM mysql.time_zone */
 /**Time zones
 */
 public class TimeZone{

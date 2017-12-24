@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, ios AS ios, io_latency AS ioLatency FROM sys.x$host_summary_by_file_io */
 /**VIEW
 */
 public class X$hostSummaryByFileIo{

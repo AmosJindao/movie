@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT sys_version AS sysVersion, mysql_version AS mysqlVersion FROM sys.version */
 /**VIEW
 */
 public class Version{

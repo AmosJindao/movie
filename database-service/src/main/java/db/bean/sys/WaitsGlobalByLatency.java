@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT events AS events, total AS total, total_latency AS totalLatency, avg_latency AS avgLatency, max_latency AS maxLatency FROM sys.waits_global_by_latency */
 /**VIEW
 */
 public class WaitsGlobalByLatency{

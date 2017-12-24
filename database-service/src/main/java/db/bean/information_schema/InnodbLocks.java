@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT lock_id AS lockId, lock_trx_id AS lockTrxId, lock_mode AS lockMode, lock_type AS lockType, lock_table AS lockTable, lock_index AS lockIndex, lock_space AS lockSpace, lock_page AS lockPage, lock_rec AS lockRec, lock_data AS lockData FROM information_schema.INNODB_LOCKS */
 /**
 */
 public class InnodbLocks{

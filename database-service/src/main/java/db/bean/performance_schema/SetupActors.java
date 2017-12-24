@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT HOST AS host, USER AS user, ROLE AS role, ENABLED AS enabled, HISTORY AS history FROM performance_schema.setup_actors */
 /**
 */
 public class SetupActors{

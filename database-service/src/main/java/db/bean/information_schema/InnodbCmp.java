@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT page_size AS pageSize, compress_ops AS compressOps, compress_ops_ok AS compressOpsOk, compress_time AS compressTime, uncompress_ops AS uncompressOps, uncompress_time AS uncompressTime FROM information_schema.INNODB_CMP */
 /**
 */
 public class InnodbCmp{

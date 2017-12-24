@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT NAME AS name, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin FROM performance_schema.cond_instances */
 /**
 */
 public class CondInstances{

@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT USER AS user, CURRENT_CONNECTIONS AS currentConnections, TOTAL_CONNECTIONS AS totalConnections FROM performance_schema.users */
 /**
 */
 public class Users{

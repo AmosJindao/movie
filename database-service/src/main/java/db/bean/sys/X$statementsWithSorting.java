@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, exec_count AS execCount, total_latency AS totalLatency, sort_merge_passes AS sortMergePasses, avg_sort_merges AS avgSortMerges, sorts_using_scans AS sortsUsingScans, sort_using_range AS sortUsingRange, rows_sorted AS rowsSorted, avg_rows_sorted AS avgRowsSorted, first_seen AS firstSeen, last_seen AS lastSeen, digest AS digest FROM sys.x$statements_with_sorting */
 /**VIEW
 */
 public class X$statementsWithSorting{

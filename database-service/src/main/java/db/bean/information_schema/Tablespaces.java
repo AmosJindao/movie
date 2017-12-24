@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLESPACE_NAME AS tablespaceName, ENGINE AS engine, TABLESPACE_TYPE AS tablespaceType, LOGFILE_GROUP_NAME AS logfileGroupName, EXTENT_SIZE AS extentSize, AUTOEXTEND_SIZE AS autoextendSize, MAXIMUM_SIZE AS maximumSize, NODEGROUP_ID AS nodegroupId, TABLESPACE_COMMENT AS tablespaceComment FROM information_schema.TABLESPACES */
 /**
 */
 public class Tablespaces{

@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT NAME AS name, ENABLED AS enabled FROM performance_schema.setup_consumers */
 /**
 */
 public class SetupConsumers{

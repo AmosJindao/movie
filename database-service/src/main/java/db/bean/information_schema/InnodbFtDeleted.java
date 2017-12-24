@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT DOC_ID AS docId FROM information_schema.INNODB_FT_DELETED */
 /**
 */
 public class InnodbFtDeleted{

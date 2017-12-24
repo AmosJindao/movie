@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_NAME AS constraintName, TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, COLUMN_NAME AS columnName, ORDINAL_POSITION AS ordinalPosition, POSITION_IN_UNIQUE_CONSTRAINT AS positionInUniqueConstraint, REFERENCED_TABLE_SCHEMA AS referencedTableSchema, REFERENCED_TABLE_NAME AS referencedTableName, REFERENCED_COLUMN_NAME AS referencedColumnName FROM information_schema.KEY_COLUMN_USAGE */
 /**
 */
 public class KeyColumnUsage{

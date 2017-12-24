@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, current_count_used AS currentCountUsed, current_allocated AS currentAllocated, current_avg_alloc AS currentAvgAlloc, current_max_alloc AS currentMaxAlloc, total_allocated AS totalAllocated FROM sys.x$memory_by_host_by_current_bytes */
 /**VIEW
 */
 public class X$memoryByHostByCurrentBytes{

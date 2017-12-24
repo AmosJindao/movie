@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT Variable_name AS variableName, Variable_value AS variableValue, Type AS type, Enabled AS enabled FROM sys.metrics */
 /**VIEW
 */
 public class Metrics{

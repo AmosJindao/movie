@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT Time_zone_id AS timeZoneId, Transition_time AS transitionTime, Transition_type_id AS transitionTypeId FROM mysql.time_zone_transition */
 /**Time zone transitions
 */
 public class TimeZoneTransition{

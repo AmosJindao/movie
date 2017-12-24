@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT CHANNEL_NAME AS channelName, MEMBER_ID AS memberId, MEMBER_HOST AS memberHost, MEMBER_PORT AS memberPort, MEMBER_STATE AS memberState FROM performance_schema.replication_group_members */
 /**
 */
 public class ReplicationGroupMembers{

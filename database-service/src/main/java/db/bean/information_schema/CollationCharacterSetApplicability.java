@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT COLLATION_NAME AS collationName, CHARACTER_SET_NAME AS characterSetName FROM information_schema.COLLATION_CHARACTER_SET_APPLICABILITY */
 /**
 */
 public class CollationCharacterSetApplicability{

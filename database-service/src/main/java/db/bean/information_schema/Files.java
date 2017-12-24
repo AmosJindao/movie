@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT FILE_ID AS fileId, FILE_NAME AS fileName, FILE_TYPE AS fileType, TABLESPACE_NAME AS tablespaceName, TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, LOGFILE_GROUP_NAME AS logfileGroupName, LOGFILE_GROUP_NUMBER AS logfileGroupNumber, ENGINE AS engine, FULLTEXT_KEYS AS fulltextKeys, DELETED_ROWS AS deletedRows, UPDATE_COUNT AS updateCount, FREE_EXTENTS AS freeExtents, TOTAL_EXTENTS AS totalExtents, EXTENT_SIZE AS extentSize, INITIAL_SIZE AS initialSize, MAXIMUM_SIZE AS maximumSize, AUTOEXTEND_SIZE AS autoextendSize, CREATION_TIME AS creationTime, LAST_UPDATE_TIME AS lastUpdateTime, LAST_ACCESS_TIME AS lastAccessTime, RECOVER_TIME AS recoverTime, TRANSACTION_COUNTER AS transactionCounter, VERSION AS version, ROW_FORMAT AS rowFormat, TABLE_ROWS AS tableRows, AVG_ROW_LENGTH AS avgRowLength, DATA_LENGTH AS dataLength, MAX_DATA_LENGTH AS maxDataLength, INDEX_LENGTH AS indexLength, DATA_FREE AS dataFree, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime, CHECK_TIME AS checkTime, CHECKSUM AS checksum, STATUS AS status, EXTRA AS extra FROM information_schema.FILES */
 /**
 */
 public class Files{

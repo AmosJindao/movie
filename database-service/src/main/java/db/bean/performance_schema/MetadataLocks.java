@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, LOCK_TYPE AS lockType, LOCK_DURATION AS lockDuration, LOCK_STATUS AS lockStatus, SOURCE AS source, OWNER_THREAD_ID AS ownerThreadId, OWNER_EVENT_ID AS ownerEventId FROM performance_schema.metadata_locks */
 /**
 */
 public class MetadataLocks{

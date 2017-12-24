@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT IP AS ip, HOST AS host, HOST_VALIDATED AS hostValidated, SUM_CONNECT_ERRORS AS sumConnectErrors, COUNT_HOST_BLOCKED_ERRORS AS countHostBlockedErrors, COUNT_NAMEINFO_TRANSIENT_ERRORS AS countNameinfoTransientErrors, COUNT_NAMEINFO_PERMANENT_ERRORS AS countNameinfoPermanentErrors, COUNT_FORMAT_ERRORS AS countFormatErrors, COUNT_ADDRINFO_TRANSIENT_ERRORS AS countAddrinfoTransientErrors, COUNT_ADDRINFO_PERMANENT_ERRORS AS countAddrinfoPermanentErrors, COUNT_FCRDNS_ERRORS AS countFcrdnsErrors, COUNT_HOST_ACL_ERRORS AS countHostAclErrors, COUNT_NO_AUTH_PLUGIN_ERRORS AS countNoAuthPluginErrors, COUNT_AUTH_PLUGIN_ERRORS AS countAuthPluginErrors, COUNT_HANDSHAKE_ERRORS AS countHandshakeErrors, COUNT_PROXY_USER_ERRORS AS countProxyUserErrors, COUNT_PROXY_USER_ACL_ERRORS AS countProxyUserAclErrors, COUNT_AUTHENTICATION_ERRORS AS countAuthenticationErrors, COUNT_SSL_ERRORS AS countSslErrors, COUNT_MAX_USER_CONNECTIONS_ERRORS AS countMaxUserConnectionsErrors, COUNT_MAX_USER_CONNECTIONS_PER_HOUR_ERRORS AS countMaxUserConnectionsPerHourErrors, COUNT_DEFAULT_DATABASE_ERRORS AS countDefaultDatabaseErrors, COUNT_INIT_CONNECT_ERRORS AS countInitConnectErrors, COUNT_LOCAL_ERRORS AS countLocalErrors, COUNT_UNKNOWN_ERRORS AS countUnknownErrors, FIRST_SEEN AS firstSeen, LAST_SEEN AS lastSeen, FIRST_ERROR_SEEN AS firstErrorSeen, LAST_ERROR_SEEN AS lastErrorSeen FROM performance_schema.host_cache */
 /**
 */
 public class HostCache{

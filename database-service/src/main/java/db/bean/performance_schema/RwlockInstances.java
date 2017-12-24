@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT NAME AS name, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, WRITE_LOCKED_BY_THREAD_ID AS writeLockedByThreadId, READ_LOCKED_BY_COUNT AS readLockedByCount FROM performance_schema.rwlock_instances */
 /**
 */
 public class RwlockInstances{

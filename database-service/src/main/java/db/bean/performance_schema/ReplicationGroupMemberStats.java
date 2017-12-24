@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT CHANNEL_NAME AS channelName, VIEW_ID AS viewId, MEMBER_ID AS memberId, COUNT_TRANSACTIONS_IN_QUEUE AS countTransactionsInQueue, COUNT_TRANSACTIONS_CHECKED AS countTransactionsChecked, COUNT_CONFLICTS_DETECTED AS countConflictsDetected, COUNT_TRANSACTIONS_ROWS_VALIDATING AS countTransactionsRowsValidating, TRANSACTIONS_COMMITTED_ALL_MEMBERS AS transactionsCommittedAllMembers, LAST_CONFLICT_FREE_TRANSACTION AS lastConflictFreeTransaction FROM performance_schema.replication_group_member_stats */
 /**
 */
 public class ReplicationGroupMemberStats{

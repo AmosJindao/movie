@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT variable AS variable, value AS value, set_time AS setTime, set_by AS setBy FROM sys.sys_config */
 /**
 */
 public class SysConfig{

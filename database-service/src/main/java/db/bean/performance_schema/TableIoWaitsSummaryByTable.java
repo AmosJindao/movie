@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait, COUNT_READ AS countRead, SUM_TIMER_READ AS sumTimerRead, MIN_TIMER_READ AS minTimerRead, AVG_TIMER_READ AS avgTimerRead, MAX_TIMER_READ AS maxTimerRead, COUNT_WRITE AS countWrite, SUM_TIMER_WRITE AS sumTimerWrite, MIN_TIMER_WRITE AS minTimerWrite, AVG_TIMER_WRITE AS avgTimerWrite, MAX_TIMER_WRITE AS maxTimerWrite, COUNT_FETCH AS countFetch, SUM_TIMER_FETCH AS sumTimerFetch, MIN_TIMER_FETCH AS minTimerFetch, AVG_TIMER_FETCH AS avgTimerFetch, MAX_TIMER_FETCH AS maxTimerFetch, COUNT_INSERT AS countInsert, SUM_TIMER_INSERT AS sumTimerInsert, MIN_TIMER_INSERT AS minTimerInsert, AVG_TIMER_INSERT AS avgTimerInsert, MAX_TIMER_INSERT AS maxTimerInsert, COUNT_UPDATE AS countUpdate, SUM_TIMER_UPDATE AS sumTimerUpdate, MIN_TIMER_UPDATE AS minTimerUpdate, AVG_TIMER_UPDATE AS avgTimerUpdate, MAX_TIMER_UPDATE AS maxTimerUpdate, COUNT_DELETE AS countDelete, SUM_TIMER_DELETE AS sumTimerDelete, MIN_TIMER_DELETE AS minTimerDelete, AVG_TIMER_DELETE AS avgTimerDelete, MAX_TIMER_DELETE AS maxTimerDelete FROM performance_schema.table_io_waits_summary_by_table */
 /**
 */
 public class TableIoWaitsSummaryByTable{

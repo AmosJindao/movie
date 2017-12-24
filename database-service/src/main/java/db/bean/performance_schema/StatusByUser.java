@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT USER AS user, VARIABLE_NAME AS variableName, VARIABLE_VALUE AS variableValue FROM performance_schema.status_by_user */
 /**
 */
 public class StatusByUser{

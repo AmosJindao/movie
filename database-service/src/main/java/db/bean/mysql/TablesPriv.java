@@ -3,6 +3,7 @@ package db.bean.mysql;
 import java.util.Date;
 import java.util.Set;
 
+/* SELECT Host AS host, Db AS db, User AS user, Table_name AS tableName, Grantor AS grantor, Timestamp AS timestamp, Table_priv AS tablePriv, Column_priv AS columnPriv FROM mysql.tables_priv */
 /**Table privileges
 */
 public class TablesPriv{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT user AS user, event_name AS eventName, total AS total, latency AS latency, max_latency AS maxLatency FROM sys.x$user_summary_by_file_io_type */
 /**VIEW
 */
 public class X$userSummaryByFileIoType{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, rows_fetched AS rowsFetched, fetch_latency AS fetchLatency, rows_inserted AS rowsInserted, insert_latency AS insertLatency, rows_updated AS rowsUpdated, update_latency AS updateLatency, rows_deleted AS rowsDeleted, delete_latency AS deleteLatency, io_read_requests AS ioReadRequests, io_read AS ioRead, io_read_latency AS ioReadLatency, io_write_requests AS ioWriteRequests, io_write AS ioWrite, io_write_latency AS ioWriteLatency, io_misc_requests AS ioMiscRequests, io_misc_latency AS ioMiscLatency, innodb_buffer_allocated AS innodbBufferAllocated, innodb_buffer_data AS innodbBufferData, innodb_buffer_free AS innodbBufferFree, innodb_buffer_pages AS innodbBufferPages, innodb_buffer_pages_hashed AS innodbBufferPagesHashed, innodb_buffer_pages_old AS innodbBufferPagesOld, innodb_buffer_rows_cached AS innodbBufferRowsCached FROM sys.x$schema_table_statistics_with_buffer */
 /**VIEW
 */
 public class X$schemaTableStatisticsWithBuffer{

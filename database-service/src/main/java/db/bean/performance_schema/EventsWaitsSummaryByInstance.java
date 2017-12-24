@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT EVENT_NAME AS eventName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait FROM performance_schema.events_waits_summary_by_instance */
 /**
 */
 public class EventsWaitsSummaryByInstance{

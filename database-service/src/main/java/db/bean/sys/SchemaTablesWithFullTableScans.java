@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT object_schema AS objectSchema, object_name AS objectName, rows_full_scanned AS rowsFullScanned, latency AS latency FROM sys.schema_tables_with_full_table_scans */
 /**VIEW
 */
 public class SchemaTablesWithFullTableScans{

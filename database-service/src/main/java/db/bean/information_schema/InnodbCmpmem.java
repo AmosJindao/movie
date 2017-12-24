@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT page_size AS pageSize, buffer_pool_instance AS bufferPoolInstance, pages_used AS pagesUsed, pages_free AS pagesFree, relocation_ops AS relocationOps, relocation_time AS relocationTime FROM information_schema.INNODB_CMPMEM */
 /**
 */
 public class InnodbCmpmem{

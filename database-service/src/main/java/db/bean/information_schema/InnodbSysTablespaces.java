@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT SPACE AS space, NAME AS name, FLAG AS flag, FILE_FORMAT AS fileFormat, ROW_FORMAT AS rowFormat, PAGE_SIZE AS pageSize, ZIP_PAGE_SIZE AS zipPageSize, SPACE_TYPE AS spaceType, FS_BLOCK_SIZE AS fsBlockSize, FILE_SIZE AS fileSize, ALLOCATED_SIZE AS allocatedSize FROM information_schema.INNODB_SYS_TABLESPACES */
 /**
 */
 public class InnodbSysTablespaces{

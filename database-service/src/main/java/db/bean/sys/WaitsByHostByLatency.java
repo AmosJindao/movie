@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, event AS event, total AS total, total_latency AS totalLatency, avg_latency AS avgLatency, max_latency AS maxLatency FROM sys.waits_by_host_by_latency */
 /**VIEW
 */
 public class WaitsByHostByLatency{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT db AS db, object_type AS objectType, count AS count FROM sys.schema_object_overview */
 /**VIEW
 */
 public class SchemaObjectOverview{

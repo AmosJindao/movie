@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT FILE_NAME AS fileName, EVENT_NAME AS eventName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait, COUNT_READ AS countRead, SUM_TIMER_READ AS sumTimerRead, MIN_TIMER_READ AS minTimerRead, AVG_TIMER_READ AS avgTimerRead, MAX_TIMER_READ AS maxTimerRead, SUM_NUMBER_OF_BYTES_READ AS sumNumberOfBytesRead, COUNT_WRITE AS countWrite, SUM_TIMER_WRITE AS sumTimerWrite, MIN_TIMER_WRITE AS minTimerWrite, AVG_TIMER_WRITE AS avgTimerWrite, MAX_TIMER_WRITE AS maxTimerWrite, SUM_NUMBER_OF_BYTES_WRITE AS sumNumberOfBytesWrite, COUNT_MISC AS countMisc, SUM_TIMER_MISC AS sumTimerMisc, MIN_TIMER_MISC AS minTimerMisc, AVG_TIMER_MISC AS avgTimerMisc, MAX_TIMER_MISC AS maxTimerMisc FROM performance_schema.file_summary_by_instance */
 /**
 */
 public class FileSummaryByInstance{

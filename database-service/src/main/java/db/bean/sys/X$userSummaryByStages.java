@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT user AS user, event_name AS eventName, total AS total, total_latency AS totalLatency, avg_latency AS avgLatency FROM sys.x$user_summary_by_stages */
 /**VIEW
 */
 public class X$userSummaryByStages{

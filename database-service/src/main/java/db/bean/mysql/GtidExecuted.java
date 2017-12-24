@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT source_uuid AS sourceUuid, interval_start AS intervalStart, interval_end AS intervalEnd FROM mysql.gtid_executed */
 /**
 */
 public class GtidExecuted{

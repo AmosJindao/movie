@@ -2,6 +2,7 @@ package db.bean.mysql;
 
 import java.util.Date;
 
+/* SELECT Host AS host, Db AS db, User AS user, Select_priv AS selectPriv, Insert_priv AS insertPriv, Update_priv AS updatePriv, Delete_priv AS deletePriv, Create_priv AS createPriv, Drop_priv AS dropPriv, Grant_priv AS grantPriv, References_priv AS referencesPriv, Index_priv AS indexPriv, Alter_priv AS alterPriv, Create_tmp_table_priv AS createTmpTablePriv, Lock_tables_priv AS lockTablesPriv, Create_view_priv AS createViewPriv, Show_view_priv AS showViewPriv, Create_routine_priv AS createRoutinePriv, Alter_routine_priv AS alterRoutinePriv, Execute_priv AS executePriv, Event_priv AS eventPriv, Trigger_priv AS triggerPriv FROM mysql.db */
 /**Database privileges
 */
 public class Db{

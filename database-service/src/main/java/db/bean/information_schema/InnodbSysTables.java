@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_ID AS tableId, NAME AS name, FLAG AS flag, N_COLS AS nCols, SPACE AS space, FILE_FORMAT AS fileFormat, ROW_FORMAT AS rowFormat, ZIP_PAGE_SIZE AS zipPageSize, SPACE_TYPE AS spaceType FROM information_schema.INNODB_SYS_TABLES */
 /**
 */
 public class InnodbSysTables{

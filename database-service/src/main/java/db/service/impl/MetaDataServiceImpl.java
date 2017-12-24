@@ -1,17 +1,22 @@
 package db.service.impl;
 
-import db.bean.DBUser;
-import db.bean.Privilege;
-import db.bean.Schema;
-import db.bean.Table;
-import db.dao.DBConnectionFactory;
+import com.google.common.collect.Lists;
+import db.bean.information_schema.Columns;
+import db.bean.information_schema.Schemata;
+import db.dao.MetaDataDao;
+import db.viewbean.*;
+import db.bean.information_schema.Tables;
+import db.dao.DBConnFactory;
 import db.exception.SystemException;
 import db.service.MetaDataService;
 import db.utils.DBUtils;
+import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -23,56 +28,106 @@ import java.util.List;
 public class MetaDataServiceImpl implements MetaDataService{
     private static final Logger LOGGER = LoggerFactory.getLogger(MetaDataServiceImpl.class);
 
-    public List<String> getHelp() {
-        try (Connection conn = getDBConnection()) {
-            Statement st = conn.createStatement();
+    private MetaDataDao metaDataDao;
 
-            ResultSet rs = st.executeQuery("HELP");
+    private MetaDataServiceImpl(){
+        metaDataDao = new MetaDataDao();
+    }
 
-//            List<Privilege> privileges = new LinkedList<>();
+    @Override
+    public List<Schema> getSchemas() {
+       List<Schemata> schematas = metaDataDao.findSchemas();
 
-            while (rs.next()) {
-                                System.out.println(rs.getString(1));
-                                System.out.println(rs.getMetaData().getColumnCount());
-                                System.out.println(rs.getMetaData().getColumnName(1));
-                                System.out.println();
+        if(schematas != null && schematas.size() > 0){
+            List<Schema> schemas = new ArrayList<>(schematas.size());
+            schematas.forEach(schemata -> {
+                Schema schema = new Schema();
+                try {
+                    BeanUtils.copyProperties(schema, schemata);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    throw new SystemException(e);
+                }
 
-//                privileges.add(new Privilege(rs.getString(1),rs.getString(2),rs.getString(3)));
-            }
+                schemas.add(schema);
+            });
 
-//            return privileges;
-        } catch (SQLException e) {
-            LOGGER.error("query privileges error!",e);
+            return schemas;
         }
 
         return Collections.emptyList();
     }
 
     @Override
-    public List<Table> getTables() {
-        try (Connection conn = getDBConnection()) {
+    public List<Table> getTables(String schema) {
+        List<Tables> tablesdb = metaDataDao.findTables(schema);
 
-            Statement stat = conn.createStatement();
+        if(tablesdb != null && tablesdb.size() > 0){
+            List<Table> tableList = new ArrayList<>(tablesdb.size());
+            tablesdb.forEach(tabledb -> {
+                Table table = new Table();
+                try {
+                    BeanUtils.copyProperties(table, tabledb);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    throw new SystemException(e);
+                }
 
-            ResultSet rs = stat.executeQuery("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES");
+                tableList.add(table);
+            });
 
-            List<Table> ll = new LinkedList();
-
-            // Fetch each row from the result set
-            while (rs.next()) {
-                String tableName = rs.getString("TABLE_NAME");
-                System.out.println(rs.getMetaData().getColumnCount());
-                System.out.println(rs.getMetaData().getColumnName(1));
-                System.out.println(tableName);
-            }
-
-        } catch (SQLException e) {
-           LOGGER.error("",e);
+            return tableList;
         }
 
         return Collections.emptyList();
     }
 
+    @Override
+    public List<Column> getColumns(String schema, String tableName){
+        List<Columns> columns = metaDataDao.findColumns(schema,tableName);
+
+        if(columns != null && columns.size() > 0){
+            List<Column> columnList = new ArrayList<>(columns.size());
+            columns.forEach(columndb -> {
+                Column columnView = new Column();
+                try {
+                    BeanUtils.copyProperties(columnView, columndb);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    throw new SystemException(e);
+                }
+
+                columnList.add(columnView);
+            });
+
+            return columnList;
+        }
+
+        return Collections.emptyList();
+    }
+
+
+    public List<String> getHelp() {
+        try (Connection conn = getDBConnection()) {
+            Statement st = conn.createStatement();
+
+            ResultSet rs = st.executeQuery("HELP");
+
+            //            List<Privilege> privileges = new LinkedList<>();
+
+            while (rs.next()) {
+                System.out.println(rs.getString(1));
+                System.out.println(rs.getMetaData().getColumnCount());
+                System.out.println(rs.getMetaData().getColumnName(1));
+                System.out.println();
+
+                //                privileges.add(new Privilege(rs.getString(1),rs.getString(2),rs.getString(3)));
+            }
+
+            //            return privileges;
+        } catch (SQLException e) {
+            LOGGER.error("query privileges error!",e);
+        }
+
+        return Collections.emptyList();
+    }
 
     public List<Privilege> getPrivileges() {
         try (Connection conn = getDBConnection()) {
@@ -111,7 +166,7 @@ public class MetaDataServiceImpl implements MetaDataService{
             ResultSet rs = st.executeQuery(" SHOW GRANTS FOR CURRENT_USER");
 
             //            System.out.println(rs.getType());
-            List<Schema> schemas = new LinkedList<>();
+            List<Privilege> schemas = new LinkedList<>();
 
             while (rs.next()) {
                 System.out.println(rs.getString(1));
@@ -119,7 +174,7 @@ public class MetaDataServiceImpl implements MetaDataService{
                 System.out.println(rs.getMetaData().getColumnName(1));
                 System.out.println();
 
-                schemas.add(new Schema(rs.getString(1)));
+//                schemas.add(new Schema(rs.getString(1)));
             }
 
             //            rs.last();
@@ -136,42 +191,11 @@ public class MetaDataServiceImpl implements MetaDataService{
         return Collections.emptyList();
     }
 
-    @Override
-    public List<Schema> getSchemas() {
-        try (Connection conn = getDBConnection()) {
-            Statement st = conn.createStatement();
 
-            ResultSet rs = st.executeQuery("show databases");
-
-            //            System.out.println(rs.getType());
-            List<Schema> schemas = new LinkedList<>();
-
-            while (rs.next()) {
-                System.out.println(rs.getString(1));
-                System.out.println(rs.getMetaData().getColumnCount());
-                System.out.println(rs.getMetaData().getColumnName(1));
-                System.out.println();
-
-                schemas.add(new Schema(rs.getString(1)));
-            }
-
-            //            rs.last();
-            //            System.out.println(rs.getRow());
-            //            rs.beforeFirst();
-
-            rs.first();
-
-            return schemas;
-        } catch (Exception e) {
-
-        }
-
-        return Collections.emptyList();
-    }
 
     private Connection getDBConnection() {
         DBUser dbUser = DBUtils.getDBUser();
-        Connection conn = DBConnectionFactory.getMysqlConnection(DBUtils.getMysqlUrl(dbUser), dbUser.getUserName(), dbUser.getPassword());
+        Connection conn = DBConnFactory.getMysqlConnection(DBUtils.getMysqlUrl(dbUser), dbUser.getUserName(), dbUser.getPassword());
 
         return conn;
     }

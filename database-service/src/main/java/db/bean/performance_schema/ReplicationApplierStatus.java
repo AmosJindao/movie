@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT CHANNEL_NAME AS channelName, SERVICE_STATE AS serviceState, REMAINING_DELAY AS remainingDelay, COUNT_TRANSACTIONS_RETRIES AS countTransactionsRetries FROM performance_schema.replication_applier_status */
 /**
 */
 public class ReplicationApplierStatus{

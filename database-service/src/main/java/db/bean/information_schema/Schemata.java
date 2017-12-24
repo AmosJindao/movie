@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT CATALOG_NAME AS catalogName, SCHEMA_NAME AS schemaName, DEFAULT_CHARACTER_SET_NAME AS defaultCharacterSetName, DEFAULT_COLLATION_NAME AS defaultCollationName, SQL_PATH AS sqlPath FROM information_schema.SCHEMATA */
 /**
 */
 public class Schemata{

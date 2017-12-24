@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT user AS user, ios AS ios, io_latency AS ioLatency FROM sys.user_summary_by_file_io */
 /**VIEW
 */
 public class UserSummaryByFileIo{

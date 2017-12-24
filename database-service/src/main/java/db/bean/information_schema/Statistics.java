@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, NON_UNIQUE AS nonUnique, INDEX_SCHEMA AS indexSchema, INDEX_NAME AS indexName, SEQ_IN_INDEX AS seqInIndex, COLUMN_NAME AS columnName, COLLATION AS collation, CARDINALITY AS cardinality, SUB_PART AS subPart, PACKED AS packed, NULLABLE AS nullable, INDEX_TYPE AS indexType, COMMENT AS comment, INDEX_COMMENT AS indexComment FROM information_schema.STATISTICS */
 /**
 */
 public class Statistics{

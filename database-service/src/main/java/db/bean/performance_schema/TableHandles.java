@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, OWNER_THREAD_ID AS ownerThreadId, OWNER_EVENT_ID AS ownerEventId, INTERNAL_LOCK AS internalLock, EXTERNAL_LOCK AS externalLock FROM performance_schema.table_handles */
 /**
 */
 public class TableHandles{

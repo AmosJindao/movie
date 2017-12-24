@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT POOL_ID AS poolId, POOL_SIZE AS poolSize, FREE_BUFFERS AS freeBuffers, DATABASE_PAGES AS databasePages, OLD_DATABASE_PAGES AS oldDatabasePages, MODIFIED_DATABASE_PAGES AS modifiedDatabasePages, PENDING_DECOMPRESS AS pendingDecompress, PENDING_READS AS pendingReads, PENDING_FLUSH_LRU AS pendingFlushLru, PENDING_FLUSH_LIST AS pendingFlushList, PAGES_MADE_YOUNG AS pagesMadeYoung, PAGES_NOT_MADE_YOUNG AS pagesNotMadeYoung, PAGES_MADE_YOUNG_RATE AS pagesMadeYoungRate, PAGES_MADE_NOT_YOUNG_RATE AS pagesMadeNotYoungRate, NUMBER_PAGES_READ AS numberPagesRead, NUMBER_PAGES_CREATED AS numberPagesCreated, NUMBER_PAGES_WRITTEN AS numberPagesWritten, PAGES_READ_RATE AS pagesReadRate, PAGES_CREATE_RATE AS pagesCreateRate, PAGES_WRITTEN_RATE AS pagesWrittenRate, NUMBER_PAGES_GET AS numberPagesGet, HIT_RATE AS hitRate, YOUNG_MAKE_PER_THOUSAND_GETS AS youngMakePerThousandGets, NOT_YOUNG_MAKE_PER_THOUSAND_GETS AS notYoungMakePerThousandGets, NUMBER_PAGES_READ_AHEAD AS numberPagesReadAhead, NUMBER_READ_AHEAD_EVICTED AS numberReadAheadEvicted, READ_AHEAD_RATE AS readAheadRate, READ_AHEAD_EVICTED_RATE AS readAheadEvictedRate, LRU_IO_TOTAL AS lruIoTotal, LRU_IO_CURRENT AS lruIoCurrent, UNCOMPRESS_TOTAL AS uncompressTotal, UNCOMPRESS_CURRENT AS uncompressCurrent FROM information_schema.INNODB_BUFFER_POOL_STATS */
 /**
 */
 public class InnodbBufferPoolStats{

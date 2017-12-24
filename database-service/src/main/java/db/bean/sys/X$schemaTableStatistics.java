@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, total_latency AS totalLatency, rows_fetched AS rowsFetched, fetch_latency AS fetchLatency, rows_inserted AS rowsInserted, insert_latency AS insertLatency, rows_updated AS rowsUpdated, update_latency AS updateLatency, rows_deleted AS rowsDeleted, delete_latency AS deleteLatency, io_read_requests AS ioReadRequests, io_read AS ioRead, io_read_latency AS ioReadLatency, io_write_requests AS ioWriteRequests, io_write AS ioWrite, io_write_latency AS ioWriteLatency, io_misc_requests AS ioMiscRequests, io_misc_latency AS ioMiscLatency FROM sys.x$schema_table_statistics */
 /**VIEW
 */
 public class X$schemaTableStatistics{

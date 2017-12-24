@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT CHARACTER_SET_NAME AS characterSetName, DEFAULT_COLLATE_NAME AS defaultCollateName, DESCRIPTION AS description, MAXLEN AS maxlen FROM information_schema.CHARACTER_SETS */
 /**
 */
 public class CharacterSets{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT variable_name AS variableName, variable_value AS variableValue FROM sys.ps_check_lost_instrumentation */
 /**VIEW
 */
 public class PsCheckLostInstrumentation{

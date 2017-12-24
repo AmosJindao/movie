@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT host AS host, event_name AS eventName, total AS total, total_latency AS totalLatency, avg_latency AS avgLatency FROM sys.host_summary_by_stages */
 /**VIEW
 */
 public class HostSummaryByStages{

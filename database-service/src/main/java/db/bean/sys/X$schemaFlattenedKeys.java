@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT table_schema AS tableSchema, table_name AS tableName, index_name AS indexName, non_unique AS nonUnique, subpart_exists AS subpartExists, index_columns AS indexColumns FROM sys.x$schema_flattened_keys */
 /**VIEW
 */
 public class X$schemaFlattenedKeys{

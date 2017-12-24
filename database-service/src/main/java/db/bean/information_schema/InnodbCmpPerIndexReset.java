@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT database_name AS databaseName, table_name AS tableName, index_name AS indexName, compress_ops AS compressOps, compress_ops_ok AS compressOpsOk, compress_time AS compressTime, uncompress_ops AS uncompressOps, uncompress_time AS uncompressTime FROM information_schema.INNODB_CMP_PER_INDEX_RESET */
 /**
 */
 public class InnodbCmpPerIndexReset{

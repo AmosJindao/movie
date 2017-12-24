@@ -1,6 +1,7 @@
 package db.bean.performance_schema;
 
 
+/* SELECT OBJECT_TYPE AS objectType, OBJECT_SCHEMA AS objectSchema, OBJECT_NAME AS objectName, COUNT_STAR AS countStar, SUM_TIMER_WAIT AS sumTimerWait, MIN_TIMER_WAIT AS minTimerWait, AVG_TIMER_WAIT AS avgTimerWait, MAX_TIMER_WAIT AS maxTimerWait FROM performance_schema.objects_summary_global_by_type */
 /**
 */
 public class ObjectsSummaryGlobalByType{

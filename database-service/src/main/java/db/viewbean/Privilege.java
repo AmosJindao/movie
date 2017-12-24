@@ -1,8 +1,8 @@
-package db.bean;
+package db.viewbean;
 
 /**
  * @author amos
- * @date 2017-09-24
+ * @date 2017-09-23
  */
 public class Privilege{
     private final String action; //privilege

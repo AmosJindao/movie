@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT QUERY AS query, TRACE AS trace, MISSING_BYTES_BEYOND_MAX_MEM_SIZE AS missingBytesBeyondMaxMemSize, INSUFFICIENT_PRIVILEGES AS insufficientPrivileges FROM information_schema.OPTIMIZER_TRACE */
 /**
 */
 public class OptimizerTrace{

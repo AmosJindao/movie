@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT TRIGGER_CATALOG AS triggerCatalog, TRIGGER_SCHEMA AS triggerSchema, TRIGGER_NAME AS triggerName, EVENT_MANIPULATION AS eventManipulation, EVENT_OBJECT_CATALOG AS eventObjectCatalog, EVENT_OBJECT_SCHEMA AS eventObjectSchema, EVENT_OBJECT_TABLE AS eventObjectTable, ACTION_ORDER AS actionOrder, ACTION_CONDITION AS actionCondition, ACTION_STATEMENT AS actionStatement, ACTION_ORIENTATION AS actionOrientation, ACTION_TIMING AS actionTiming, ACTION_REFERENCE_OLD_TABLE AS actionReferenceOldTable, ACTION_REFERENCE_NEW_TABLE AS actionReferenceNewTable, ACTION_REFERENCE_OLD_ROW AS actionReferenceOldRow, ACTION_REFERENCE_NEW_ROW AS actionReferenceNewRow, CREATED AS created, SQL_MODE AS sqlMode, DEFINER AS definer, CHARACTER_SET_CLIENT AS characterSetClient, COLLATION_CONNECTION AS collationConnection, DATABASE_COLLATION AS databaseCollation FROM information_schema.TRIGGERS */
 /**
 */
 public class Triggers{

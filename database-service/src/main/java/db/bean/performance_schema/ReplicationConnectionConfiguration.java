@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT CHANNEL_NAME AS channelName, HOST AS host, PORT AS port, USER AS user, NETWORK_INTERFACE AS networkInterface, AUTO_POSITION AS autoPosition, SSL_ALLOWED AS sslAllowed, SSL_CA_FILE AS sslCaFile, SSL_CA_PATH AS sslCaPath, SSL_CERTIFICATE AS sslCertificate, SSL_CIPHER AS sslCipher, SSL_KEY AS sslKey, SSL_VERIFY_SERVER_CERTIFICATE AS sslVerifyServerCertificate, SSL_CRL_FILE AS sslCrlFile, SSL_CRL_PATH AS sslCrlPath, CONNECTION_RETRY_INTERVAL AS connectionRetryInterval, CONNECTION_RETRY_COUNT AS connectionRetryCount, HEARTBEAT_INTERVAL AS heartbeatInterval, TLS_VERSION AS tlsVersion FROM performance_schema.replication_connection_configuration */
 /**
 */
 public class ReplicationConnectionConfiguration{

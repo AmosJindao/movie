@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT SPACE AS space, PATH AS path FROM information_schema.INNODB_SYS_DATAFILES */
 /**
 */
 public class InnodbSysDatafiles{

@@ -1,6 +1,7 @@
 package db.bean.tests;
 
 
+/* SELECT id AS id, name AS name FROM tests.test */
 /**this is a test
 */
 public class Test{

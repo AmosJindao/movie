@@ -2,6 +2,7 @@ package db.bean.performance_schema;
 
 import java.util.Date;
 
+/* SELECT THREAD_ID AS threadId, EVENT_ID AS eventId, END_EVENT_ID AS endEventId, EVENT_NAME AS eventName, STATE AS state, TRX_ID AS trxId, GTID AS gtid, XID_FORMAT_ID AS xidFormatId, XID_GTRID AS xidGtrid, XID_BQUAL AS xidBqual, XA_STATE AS xaState, SOURCE AS source, TIMER_START AS timerStart, TIMER_END AS timerEnd, TIMER_WAIT AS timerWait, ACCESS_MODE AS accessMode, ISOLATION_LEVEL AS isolationLevel, AUTOCOMMIT AS autocommit, NUMBER_OF_SAVEPOINTS AS numberOfSavepoints, NUMBER_OF_ROLLBACK_TO_SAVEPOINT AS numberOfRollbackToSavepoint, NUMBER_OF_RELEASE_SAVEPOINT AS numberOfReleaseSavepoint, OBJECT_INSTANCE_BEGIN AS objectInstanceBegin, NESTING_EVENT_ID AS nestingEventId, NESTING_EVENT_TYPE AS nestingEventType FROM performance_schema.events_transactions_current */
 /**
 */
 public class EventsTransactionsCurrent{

@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_CATALOG AS tableCatalog, TABLE_SCHEMA AS tableSchema, TABLE_NAME AS tableName, COLUMN_NAME AS columnName, ORDINAL_POSITION AS ordinalPosition, COLUMN_DEFAULT AS columnDefault, IS_NULLABLE AS isNullable, DATA_TYPE AS dataType, CHARACTER_MAXIMUM_LENGTH AS characterMaximumLength, CHARACTER_OCTET_LENGTH AS characterOctetLength, NUMERIC_PRECISION AS numericPrecision, NUMERIC_SCALE AS numericScale, DATETIME_PRECISION AS datetimePrecision, CHARACTER_SET_NAME AS characterSetName, COLLATION_NAME AS collationName, COLUMN_TYPE AS columnType, COLUMN_KEY AS columnKey, EXTRA AS extra, PRIVILEGES AS privileges, COLUMN_COMMENT AS columnComment, GENERATION_EXPRESSION AS generationExpression FROM information_schema.COLUMNS */
 /**
 */
 public class Columns{

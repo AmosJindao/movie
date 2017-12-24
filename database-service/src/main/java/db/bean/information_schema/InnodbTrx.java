@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT trx_id AS trxId, trx_state AS trxState, trx_started AS trxStarted, trx_requested_lock_id AS trxRequestedLockId, trx_wait_started AS trxWaitStarted, trx_weight AS trxWeight, trx_mysql_thread_id AS trxMysqlThreadId, trx_query AS trxQuery, trx_operation_state AS trxOperationState, trx_tables_in_use AS trxTablesInUse, trx_tables_locked AS trxTablesLocked, trx_lock_structs AS trxLockStructs, trx_lock_memory_bytes AS trxLockMemoryBytes, trx_rows_locked AS trxRowsLocked, trx_rows_modified AS trxRowsModified, trx_concurrency_tickets AS trxConcurrencyTickets, trx_isolation_level AS trxIsolationLevel, trx_unique_checks AS trxUniqueChecks, trx_foreign_key_checks AS trxForeignKeyChecks, trx_last_foreign_key_error AS trxLastForeignKeyError, trx_adaptive_hash_latched AS trxAdaptiveHashLatched, trx_adaptive_hash_timeout AS trxAdaptiveHashTimeout, trx_is_read_only AS trxIsReadOnly, trx_autocommit_non_locking AS trxAutocommitNonLocking FROM information_schema.INNODB_TRX */
 /**
 */
 public class InnodbTrx{

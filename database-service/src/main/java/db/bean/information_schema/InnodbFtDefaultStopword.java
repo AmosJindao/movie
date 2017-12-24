@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT value AS value FROM information_schema.INNODB_FT_DEFAULT_STOPWORD */
 /**
 */
 public class InnodbFtDefaultStopword{

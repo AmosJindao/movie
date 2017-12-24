@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT object_schema AS objectSchema, object_name AS objectName, waiting_thread_id AS waitingThreadId, waiting_pid AS waitingPid, waiting_account AS waitingAccount, waiting_lock_type AS waitingLockType, waiting_lock_duration AS waitingLockDuration, waiting_query AS waitingQuery, waiting_query_secs AS waitingQuerySecs, waiting_query_rows_affected AS waitingQueryRowsAffected, waiting_query_rows_examined AS waitingQueryRowsExamined, blocking_thread_id AS blockingThreadId, blocking_pid AS blockingPid, blocking_account AS blockingAccount, blocking_lock_type AS blockingLockType, blocking_lock_duration AS blockingLockDuration, sql_kill_blocking_query AS sqlKillBlockingQuery, sql_kill_blocking_connection AS sqlKillBlockingConnection FROM sys.schema_table_lock_waits */
 /**VIEW
 */
 public class SchemaTableLockWaits{

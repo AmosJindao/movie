@@ -1,6 +1,7 @@
 package db.bean.information_schema;
 
 
+/* SELECT TABLE_ID AS tableId, NAME AS name, STATS_INITIALIZED AS statsInitialized, NUM_ROWS AS numRows, CLUST_INDEX_SIZE AS clustIndexSize, OTHER_INDEX_SIZE AS otherIndexSize, MODIFIED_COUNTER AS modifiedCounter, AUTOINC AS autoinc, REF_COUNT AS refCount FROM information_schema.INNODB_SYS_TABLESTATS */
 /**
 */
 public class InnodbSysTablestats{

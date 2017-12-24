@@ -2,6 +2,7 @@ package db.bean.information_schema;
 
 import java.util.Date;
 
+/* SELECT NAME AS name, SUBSYSTEM AS subsystem, COUNT AS count, MAX_COUNT AS maxCount, MIN_COUNT AS minCount, AVG_COUNT AS avgCount, COUNT_RESET AS countReset, MAX_COUNT_RESET AS maxCountReset, MIN_COUNT_RESET AS minCountReset, AVG_COUNT_RESET AS avgCountReset, TIME_ENABLED AS timeEnabled, TIME_DISABLED AS timeDisabled, TIME_ELAPSED AS timeElapsed, TIME_RESET AS timeReset, STATUS AS status, TYPE AS type, COMMENT AS comment FROM information_schema.INNODB_METRICS */
 /**
 */
 public class InnodbMetrics{

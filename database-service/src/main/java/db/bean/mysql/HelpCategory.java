@@ -1,6 +1,7 @@
 package db.bean.mysql;
 
 
+/* SELECT help_category_id AS helpCategoryId, name AS name, parent_category_id AS parentCategoryId, url AS url FROM mysql.help_category */
 /**help categories
 */
 public class HelpCategory{

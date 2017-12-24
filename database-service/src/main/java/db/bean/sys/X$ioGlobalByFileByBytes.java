@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT file AS file, count_read AS countRead, total_read AS totalRead, avg_read AS avgRead, count_write AS countWrite, total_written AS totalWritten, avg_write AS avgWrite, total AS total, write_pct AS writePct FROM sys.x$io_global_by_file_by_bytes */
 /**VIEW
 */
 public class X$ioGlobalByFileByBytes{

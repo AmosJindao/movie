@@ -2,6 +2,7 @@ package db.bean.sys;
 
 import java.util.Date;
 
+/* SELECT query AS query, db AS db, exec_count AS execCount, total_latency AS totalLatency, no_index_used_count AS noIndexUsedCount, no_good_index_used_count AS noGoodIndexUsedCount, no_index_used_pct AS noIndexUsedPct, rows_sent AS rowsSent, rows_examined AS rowsExamined, rows_sent_avg AS rowsSentAvg, rows_examined_avg AS rowsExaminedAvg, first_seen AS firstSeen, last_seen AS lastSeen, digest AS digest FROM sys.statements_with_full_table_scans */
 /**VIEW
 */
 public class StatementsWithFullTableScans{

@@ -1,6 +1,7 @@
 package db.bean.sys;
 
 
+/* SELECT user AS user, total AS total, total_latency AS totalLatency, min_latency AS minLatency, avg_latency AS avgLatency, max_latency AS maxLatency, thread_id AS threadId, processlist_id AS processlistId FROM sys.x$io_by_thread_by_latency */
 /**VIEW
 */
 public class X$ioByThreadByLatency{
