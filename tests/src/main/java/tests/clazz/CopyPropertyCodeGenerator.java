@@ -24,7 +24,7 @@ public class CopyPropertyCodeGenerator<T> {
 
         if (fields != null && fields.length > 0) {
             for (Field field : fields) {
-                sb.append(String.format("%s.%s(%s.%s());\n", setter, ClassUtils.getSetMethodStr(field), getter, ClassUtils.getGetMethodStr(field)));
+                sb.append(String.format("%s.%s(%s.%s());\n", setter, ClassUtils.getSetMethodName(field), getter, ClassUtils.getGetMethodName(field)));
             }
         }
         return sb.toString();

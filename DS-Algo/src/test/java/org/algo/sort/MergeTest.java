@@ -1,20 +1,39 @@
 package org.algo.sort;
-import java.util.Random;
-import java.util.stream.IntStream;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  *
  */
 public class MergeTest extends SortTest{
 
-	public static void main(String[] args) {
-        Random rd = new Random();
-		IntStream ints = rd.ints(10, 0, 100);
+    @Test
+    public void merge() {
+        int[] arr = getRandomInts(10);
+        Merge.mergeSort(arr, 0, arr.length - 1);
+        Assert.assertTrue(isAsc(arr));
 
-		int[] arr = ints.toArray();
+        arr = getRandomInts(13);
+        Merge.mergeSort(arr, 0, arr.length - 1);
+        Assert.assertTrue(isAsc(arr));
 
-		print(arr);
-		Merge.mergeSort(arr, 0, arr.length-1);
-		print(arr);
-	}
+        arr = getRandomInts(10);
+        Merge.mergeSortTopDown(arr);
+        Assert.assertTrue(isAsc(arr));
+
+        arr = getRandomInts(13);
+        Merge.mergeSortTopDown(arr);
+        Assert.assertTrue(isAsc(arr));
+
+
+        arr = getRandomInts(10);
+        Merge.mergeSortBottomUp(arr);
+        Assert.assertTrue(isAsc(arr));
+
+        arr = getRandomInts(13);
+        Merge.mergeSortBottomUp(arr);
+        Assert.assertTrue(isAsc(arr));
+
+    }
 }

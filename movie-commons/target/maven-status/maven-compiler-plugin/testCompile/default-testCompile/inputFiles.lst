@@ -1,5 +1,6 @@
 /opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/MD5Test.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/SkipListTest.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/CommonUtilsTest.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/DateUtilsTest.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/StringUtilsTest.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/test/java/org/movie/commons/utils/PropertiesLoaderTest.java

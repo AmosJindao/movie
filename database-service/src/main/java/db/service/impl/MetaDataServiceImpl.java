@@ -30,7 +30,7 @@ public class MetaDataServiceImpl implements MetaDataService{
 
     private MetaDataDao metaDataDao;
 
-    private MetaDataServiceImpl(){
+    public MetaDataServiceImpl(){
         metaDataDao = new MetaDataDao();
     }
 

@@ -2,6 +2,7 @@
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/Constants.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/DateUtils.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/ini/Section.java
+/opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/YamlUtils.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/PropertiesLoader.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/CommonUtils.java
 /opt/amos/java/intellijapps/movie/movie-commons/src/main/java/org/movie/commons/utils/StringUtils.java

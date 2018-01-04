@@ -1,6 +1,5 @@
 package tests.IO;
 
-import com.sun.mail.imap.protocol.ID;
 import org.jaudiotagger.audio.mp3.MP3File;
 import org.jaudiotagger.tag.id3.ID3v22Frame;
 

@@ -1,5 +1,7 @@
 package org.algo.sort;
 
+import org.algo.AlgoBaseUtils;
+
 import java.util.Random;
 import java.util.stream.IntStream;
 
@@ -18,25 +20,5 @@ public class Bubble{
                 }
             }
         }
-    }
-
-
-
-    static void print(int[] arr) {
-        for (int a : arr) {
-            System.out.print(a + ",");
-        }
-        System.out.println();
-    }
-
-    public static void main(String[] args) {
-        Random rd = new Random();
-        IntStream ints = rd.ints(10, 0, 100);
-
-        int[] arr = ints.toArray();
-
-        print(arr);
-         bubble(arr);
-        print(arr);
     }
 }

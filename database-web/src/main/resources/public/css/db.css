@@ -1,0 +1,45 @@
+html, body, div{
+    padding:0;
+    margin: 0;
+}
+
+div{
+    border: 1px solid gray;
+}
+
+#allTop, #allBottom,#allMiddle,#leftTop,#leftBottom, #centerTop, #centerBottom,#rightTop,#rightBottom{
+    width: 100%;
+}
+
+#allTop{
+}
+
+#allLeft{
+    float:left;
+}
+
+#allCenter{
+    float:right;
+}
+
+div#leftTop{
+    overflow: auto;
+}
+
+div#leftBottom{
+    overflow: auto;
+}
+
+div#centerTop{
+overflow: auto;
+}
+
+div#centerBottom{
+overflow: auto;
+}
+
+div#allBottom{
+    clear: both;
+    height: 10px;
+}
+

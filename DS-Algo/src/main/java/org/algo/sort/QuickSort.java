@@ -13,31 +13,31 @@ package org.algo.sort;
  * 递归的最底部情形，是数列的大小是零或一，也就是永远都已经被排序好了。虽然一直递归下去，但是这个算法总会结束，
  * 因为在每次的迭代（iteration）中，它至少会把一个元素摆到它最后的位置去。
  * </p>
+ *
  * @author amos
  * @date 2016-10-15
  */
 public final class QuickSort{
 
     /**
-     *
      * @param arr
      * @param leftIdx
-     * @param rightIdx
+     * @param rightIdx valid index
      */
     public static final void quickSort(int[] arr, int leftIdx, int rightIdx) {
         if (leftIdx >= rightIdx) {
             return;
         }
 
-        int pivotIdx = partition(arr,leftIdx,rightIdx);
+        int pivotIdx = partition(arr, leftIdx, rightIdx);
 
         quickSort(arr, leftIdx, pivotIdx - 1);
         quickSort(arr, pivotIdx + 1, rightIdx);
 
     }
 
-    private  static  int partition(int[] arr, int leftIdx, int rightIdx){
-        int mid = (leftIdx+rightIdx)>>1;
+    private static int partition(int[] arr, int leftIdx, int rightIdx) {
+        int mid = (leftIdx + rightIdx) >> 1;
 
         int pivot = arr[mid];
 
@@ -48,7 +48,7 @@ public final class QuickSort{
                 leftIdx++;
             }
 
-            if(leftIdx < rightIdx) {
+            if (leftIdx < rightIdx) {
                 arr[rightIdx] = arr[leftIdx];
                 rightIdx--;
             }
@@ -57,7 +57,7 @@ public final class QuickSort{
                 rightIdx--;
             }
 
-            if(rightIdx > leftIdx) {
+            if (rightIdx > leftIdx) {
                 arr[leftIdx] = arr[rightIdx];
                 leftIdx++;
             }
@@ -68,16 +68,68 @@ public final class QuickSort{
         return leftIdx;
     }
 
-
-    private static void swap(int[] arr, int idx1, int idx2) {
-        int tmp = arr[idx1];
-        arr[idx1] = arr[idx2];
-        arr[idx2] = tmp;
-    }
-
     public static final void dualPivotQuickSort(int[] arr, int leftIdx, int rightIdx) {
         //TODO to implement dual-pivot quick sort
-
+//        if (leftIdx >= rightIdx) {
+//            return;
+//        }
+//
+//        int pivot1Idx = (rightIdx - leftIdx + 1) / 4;
+//        int pivot2Idx = (rightIdx - leftIdx + 1) * 3 / 4;
+//
+//        int pivot1 = arr[pivot1Idx];
+//        int pivot2 = arr[pivot2Idx];
+//
+//        arr[pivot1Idx] = arr[leftIdx];
+//        arr[pivot2Idx] = arr[rightIdx];
+//
+////        if (pivot1 == pivot2) {
+////
+////        } else {
+//            if (pivot1 > pivot2) {
+//                pivot1 = pivot1 ^ pivot2;
+//                pivot2 = pivot1 ^ pivot2;
+//                pivot1 = pivot1 ^ pivot2;
+//            }
+//
+//            /*
+//            -------|-------|------|-------
+//                   left    k      right
+//             < pivot1, before left
+//             pivot1<= <=pivot2, between left and k, exclusive
+//             > pivot2, after right
+//           */
+//
+//            for (int k = leftIdx + 1; k < rightIdx; k++) {
+//                if (arr[k] < pivot1) {
+//                    arr[leftIdx] = arr[k];
+//                    leftIdx++;
+//                    //                    k++;
+//                } else if (arr[k] > pivot2) {
+//                    arr[rightIdx] = arr[k];
+//
+//                    while (arr[--rightIdx] > pivot2) {
+//                        ;
+//                    }
+//
+//                    if (arr[rightIdx] < pivot1) {
+//                        arr[leftIdx] = arr[rightIdx];
+//                        leftIdx++;
+//                        arr[k] = arr[leftIdx];
+//                        //                        k++;
+//                    } else {
+//                        arr[k] = arr[rightIdx];
+//                        //                        k++;
+//                    }
+//                }
+//                //                else {
+//                //                    k++;
+//                //                }
+//            }
+//
+//            arr[leftIdx] = pivot1;
+//            arr[rightIdx] = pivot2;
+////        }
 
     }
 }

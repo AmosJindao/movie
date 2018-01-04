@@ -12,7 +12,7 @@ public class MetaDataServiceTest{
 
     @Test
     public void getTables() {
-        metaDataService.getTables();
+        metaDataService.getTables("mysql");
     }
 
     @Test

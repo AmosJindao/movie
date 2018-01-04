@@ -23,7 +23,7 @@ public class SetPropertyCodeGenerator<T> {
         
         if(fields != null && fields.length > 0){
             for(Field field:fields) {
-                sb.append(String.format("%s.%s();\n",setter, ClassUtils.getSetMethodStr(field)));
+                sb.append(String.format("%s.%s();\n",setter, ClassUtils.getSetMethodName(field)));
             }
         }
 

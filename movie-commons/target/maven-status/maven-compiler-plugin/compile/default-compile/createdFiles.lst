@@ -11,6 +11,7 @@ org/movie/commons/utils/ini/INIParser.class
 org/movie/commons/utils/CommonUtils.class
 org/movie/commons/utils/DateUtils.class
 org/movie/commons/utils/http/FileItem.class
+org/movie/commons/utils/YamlUtils.class
 org/movie/commons/utils/SkipList.class
 org/movie/commons/utils/ini/SectionProperty.class
 org/movie/commons/utils/json/gson/GsonDateTypeAdapter$1.class

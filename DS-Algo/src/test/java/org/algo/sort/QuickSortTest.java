@@ -15,10 +15,19 @@ public class QuickSortTest extends SortTest{
 
         for (int len: arrLens) {
             int[] arr = getRandomInts(len);
-            QuickSort.quickSort(arr, 0, arr.length - 1);
+//            QuickSort.quickSort(arr, 0, arr.length - 1);
+            QuickSort.dualPivotQuickSort(arr, 0, arr.length - 1);
 
-            Assert.assertEquals(isAsc(arr), true);
+            Assert.assertTrue(isAsc(arr));
         }
     }
+
+//    @Test
+//    public void dualPivotQuickSort(){
+//        int[] arr = getRandomInts(10);
+//        QuickSort.dualPivotQuickSort(arr, 0, arr.length - 1);
+//
+//        Assert.assertTrue(isAsc(arr));
+//    }
 
 }
