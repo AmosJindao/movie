@@ -1,5 +1,7 @@
 package org.ds.tree;
 
+import org.ds.tree.binary.RBTree;
+
 public class RBTreeTest {
     public static void main(String[] args) {
 		RBTree<Integer, String> tree = new RBTree<>();

@@ -102,43 +102,6 @@ public class MinHeap{
 
         int tmp = heap[idx];
 
-
-//        int i = idx;
-//        while (i < size) {
-//            int left = leftChild(i);
-//            int right = rightChild(i);
-//            if (left < size && right < size) {
-//                if (heap[left] < heap[right]) {
-//                    heap[i] = heap[left];
-//                    i = left;
-//                } else {
-//                    heap[i] = heap[right];
-//                    i = right;
-//                }
-//            } else if (left < size) {
-//                heap[i] = heap[left];
-//                i = left;
-//            } else if (right < size) {
-//                heap[i] = heap[right];
-//                i = right;
-//            } else {
-//                break;
-//            }
-//        }
-//
-//        if (i < size) {
-//            int sliding = 0;
-//            if (i % 2 == 0) {//right
-//                sliding = leftChild(parent(i));
-//            } else {
-//                sliding = rightChild(parent(i));
-//            }
-//
-//            heap[i] = heap[sliding];
-//        }
-
-//        size--;
-
         decreaseKey(idx,Integer.MIN_VALUE);
         extractMin();
 

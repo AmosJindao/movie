@@ -1,4 +1,4 @@
-package org.ds.tree;
+package org.ds.tree.binary;
 
 import java.util.LinkedList;
 import java.util.List;
