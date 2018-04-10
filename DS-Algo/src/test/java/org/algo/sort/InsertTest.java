@@ -15,8 +15,15 @@ public class InsertTest extends SortTest{
         Insert.insert(arr);
         Assert.assertTrue(isAsc(arr));
 
-        int[] arr2 = getRandomInts(10);
-        Insert.insertSwapALot(arr2);
-        Assert.assertTrue(isAsc(arr2));
+        arr = getRandomInts(10);
+        Insert.insertSwapALot(arr);
+        Assert.assertTrue(isAsc(arr));
+
+
+        arr = getRandomInts(10);
+        Insert.librarySort(arr);
+        Assert.assertTrue(isAsc(arr));
     }
+
+
 }
