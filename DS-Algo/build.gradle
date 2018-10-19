@@ -1,0 +1,7 @@
+
+description = 'DS-Algo'
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version:'19.0'
+    testCompile group: 'org.testng', name: 'testng', version:'6.9.10'
+}
+test.useTestNG()

@@ -1,0 +1,8 @@
+
+description = 'movie-rpc'
+dependencies {
+    compile group: 'io.netty', name: 'netty-all', version:'4.1.6.Final'
+    compile group: 'com.google.guava', name: 'guava', version:'19.0'
+    testCompile group: 'org.testng', name: 'testng', version:'6.9.10'
+}
+test.useTestNG()

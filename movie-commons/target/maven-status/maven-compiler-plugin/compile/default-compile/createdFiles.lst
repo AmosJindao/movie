@@ -6,9 +6,9 @@ org/movie/commons/utils/SkipList$Node.class
 org/movie/commons/utils/MD5.class
 org/movie/commons/utils/http/WebUtils$DefaultTrustManager.class
 org/movie/commons/Constants.class
+org/movie/commons/utils/CommonUtils.class
 org/movie/commons/utils/FileUtils.class
 org/movie/commons/utils/ini/INIParser.class
-org/movie/commons/utils/CommonUtils.class
 org/movie/commons/utils/DateUtils.class
 org/movie/commons/utils/http/FileItem.class
 org/movie/commons/utils/YamlUtils.class

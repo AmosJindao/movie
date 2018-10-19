@@ -1,11 +1,9 @@
 package db.controller;
 
-import com.google.gson.Gson;
 import db.service.MetaDataService;
 import db.service.impl.MetaDataServiceImpl;
 import db.viewbean.Schema;
 import db.viewbean.Table;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,7 +27,7 @@ public class MetaDataController{
         metaDataService = new MetaDataServiceImpl();
     }
 
-    @RequestMapping (path = "schema", method = RequestMethod.GET)
+    @RequestMapping (path = "schemas", method = RequestMethod.GET)
     public List<Schema> getSchemas() {
 //        System.out.println(gson.toJson("gson works!"));
         return metaDataService.getSchemas();
