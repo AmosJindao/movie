@@ -5,6 +5,6 @@ org/movie/commons/utils/StringUtilsTest.class
 org/movie/commons/utils/StringUtilsTest$T1.class
 org/movie/commons/utils/json/gson/TestGson.class
 org/movie/commons/utils/PropertiesLoaderTest.class
-org/movie/commons/utils/MD5Test.class
 org/movie/commons/utils/StringUtilsTest$1.class
+org/movie/commons/utils/MD5Test.class
 org/movie/commons/utils/CommonUtilsTest.class

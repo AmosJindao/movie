@@ -1,7 +1,7 @@
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/PropertiesLoaderTest.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/DateUtilsTest.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/json/gson/GsonUtilsTest.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/CommonUtilsTest.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/MD5Test.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/StringUtilsTest.java
-/opt/dep/java/japps/movie/movie-commons/src/test/java/org/movie/commons/utils/SkipListTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/MD5Test.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/json/gson/GsonUtilsTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/StringUtilsTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/CommonUtilsTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/PropertiesLoaderTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/SkipListTest.java
+/opt/dep/java/javaapps/movie/movie-commons/src/test/java/org/movie/commons/utils/DateUtilsTest.java
