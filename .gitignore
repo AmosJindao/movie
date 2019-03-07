@@ -15,7 +15,7 @@
 .idea
 
 target/
-movie-commons/target
+movie-commons/target/**
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup

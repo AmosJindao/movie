@@ -40,6 +40,20 @@
             <layout>default</layout>
             <url>http://repo1.maven.org/maven2</url>
         </repository>
+        <repository>
+            <id>central2</id>
+            <name>Maven Repository 2</name>
+            <url>http://central.maven.org/maven2/</url>
+        </repository>
+
+        <repository>
+            <id>clojars</id>
+            <name>Maven Repository 3</name>
+            <url>http://clojars.org/repo/</url>
+        </repository>
+
+
+
         <!-- <repository> <id>jboss-public-repository-group</id> <name>JBoss Public
             Repository Group</name> <url>http://repository.jboss.org/nexus/content/groups/public</url>
             </repository> -->
@@ -48,8 +62,7 @@
     <properties>
         <servlet.version>2.5</servlet.version>
 
-       <!-- <hadoop.version>3.0.0</hadoop.version>-->
-        <hadoop.version>2.7.5</hadoop.version>
+        <hadoop.version>3.2.0</hadoop.version>
 
         <springframework.version>5.1.5.RELEASE</springframework.version>
         <spring.boot.version>2.0.6.RELEASE</spring.boot.version>
@@ -96,6 +109,8 @@
         <module>database-service</module>
         <module>design-pattern</module>
         <module>database-web</module>
+        <module>audio-service</module>
+        <module>image-service</module>
     </modules>
 
     <dependencyManagement>
