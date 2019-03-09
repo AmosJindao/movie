@@ -14,6 +14,8 @@
 *.iml
 .idea
 
+.gradle
+
 target
 target/
 /movie-commons/target/**
