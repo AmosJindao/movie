@@ -6,7 +6,7 @@ import java.util.List;
 import org.movie.BaseTest;
 import org.movie.bean.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 /**
  * @author amos
@@ -17,7 +17,7 @@ public class MovieDaoTest extends BaseTest {
 	@Autowired
 	MovieDao movieDao;
 	
-	@Test
+//	@Test
 	public void batchInsertMovie(){
 		List<Movie> mList = new ArrayList<>();
 		
