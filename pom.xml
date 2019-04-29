@@ -111,6 +111,7 @@
         <module>database-web</module>
         <module>audio-service</module>
         <module>image-service</module>
+        <module>crawlers</module>
     </modules>
 
     <dependencyManagement>
