@@ -112,6 +112,7 @@
         <module>audio-service</module>
         <module>image-service</module>
         <module>crawlers</module>
+        <module>rss</module>
     </modules>
 
     <dependencyManagement>
@@ -124,6 +125,11 @@
             <dependency>
                 <groupId>amos</groupId>
                 <artifactId>database-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>amos</groupId>
+                <artifactId>crawlers</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
