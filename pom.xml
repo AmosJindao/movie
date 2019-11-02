@@ -69,7 +69,7 @@
         <slf4j.version>1.7.6</slf4j.version>
         <logback.version>1.2.3</logback.version>
 
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.10.0</jackson.version>
 
         <junit.version>4.12</junit.version>
         <testng.version>6.9.10</testng.version>
