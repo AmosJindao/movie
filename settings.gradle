@@ -6,9 +6,7 @@ include ':movie-hadoop'
 include ':movie-gui'
 include ':movie-web-spring-boot'
 include ':tests'
-include ':DS-Algo'
 include ':database-service'
-include ':design-pattern'
 include ':database-web'
 
 project(':movie-commons').projectDir = "$rootDir/movie-commons" as File
@@ -18,7 +16,5 @@ project(':movie-hadoop').projectDir = "$rootDir/movie-hadoop" as File
 project(':movie-gui').projectDir = "$rootDir/movie-gui" as File
 project(':movie-web-spring-boot').projectDir = "$rootDir/movie-web-spring-boot" as File
 project(':tests').projectDir = "$rootDir/tests" as File
-project(':DS-Algo').projectDir = "$rootDir/DS-Algo" as File
 project(':database-service').projectDir = "$rootDir/database-service" as File
-project(':design-pattern').projectDir = "$rootDir/design-pattern" as File
 project(':database-web').projectDir = "$rootDir/database-web" as File
